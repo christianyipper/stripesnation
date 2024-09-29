@@ -1,0 +1,16 @@
+@mixin color( $text, $background, $border ) {
+    color: $text;
+    background-color: $background;
+    border-color: $border;
+}
+@mixin flex( $grow, $shrink, $basis ) {
+    display: flex;
+    flex: $grow $shrink $basis;
+}
+@mixin flex-wrap( $wrap, $direction, $posX, $posY ) {
+    display: flex;
+    flex-wrap: $wrap;
+    flex-direction: $direction;
+    justify-content: $posX;
+    align-items: $posY;
+}
