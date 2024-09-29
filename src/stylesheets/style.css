@@ -2,6 +2,15 @@ body {
   background: black;
 }
 
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+}
+
 @font-face {
   font-family: "StripesNation";
   src: url("../assets/fonts/StripesNationFont.ttf");
@@ -14,6 +23,7 @@ body {
 
 h1, h2, h3 {
   font-family: "StripesNation";
+  font-weight: normal;
 }
 
 h1 {
@@ -30,6 +40,11 @@ h3 {
 
 p, a {
   font-size: 18px;
+  font-family: "Poppins";
+}
+
+p {
+  line-height: 1.5;
 }
 
 a {
@@ -154,12 +169,13 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 64px;
   position: fixed;
   top: 0;
   left: 0;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  z-index: 999;
 }
 nav > div {
   display: grid;
@@ -203,4 +219,109 @@ nav > div .nav-right {
   width: 100%;
   height: 64px;
   gap: 8px;
+}
+
+.home {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0 80px;
+  max-width: 1280px;
+  width: 100%;
+  gap: 24px;
+}
+.home .img-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  overflow: hidden;
+  animation: parallax-load 3s ease-in-out;
+}
+.home .img-wrap img {
+  margin-top: -5vh;
+  height: 125vh;
+  aspect-ratio: 3/2;
+  z-index: -1;
+}
+.home .img-wrap .parallax-front {
+  position: absolute;
+  animation: parallax-load-left 3s ease-in-out;
+}
+.home .img-wrap .img-bg {
+  z-index: -2;
+  animation: parallax-load-right 3s ease-in-out;
+}
+.home .img-wrap .img-bg .img-overlay {
+  height: 125vh;
+  aspect-ratio: 3/2;
+  position: absolute;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 66%, rgb(0, 0, 0) 100%);
+}
+.home article {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  grid-column: 2/6;
+  margin-top: 10vh;
+  height: 100%;
+  z-index: 1;
+  animation: home-text-fade 3s ease-in-out;
+}
+.home article h1 {
+  font-size: 40px;
+  line-height: 0.8;
+  margin: 32px 0;
+}
+.home article h1 span {
+  font-size: 80px;
+}
+.home article p {
+  margin-top: 0;
+}
+
+@keyframes parallax-load-left {
+  0% {
+    transform: translateX(-2%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes parallax-load-right {
+  0% {
+    transform: translateX(2%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes parallax-load {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes home-text-fade {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
