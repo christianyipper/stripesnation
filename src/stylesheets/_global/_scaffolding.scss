@@ -1,8 +1,12 @@
 body {
     background: black;
+    margin: 0;
 }
 
 main {
     @include flex-wrap( nowrap, row, center, start );
+    position: relative;
     width: 100%;
+    min-height: 100vh;
+    padding-bottom: 293px;
 }

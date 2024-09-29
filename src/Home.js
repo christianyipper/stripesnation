@@ -1,6 +1,6 @@
-import HomeBG from "./assets/img/sn-jersey.jpg"
 import HomeParallaxBg from "./assets/img/sn-parallax-bg.jpg"
 import HomeParallax from "./assets/img/sn-parallax-official.png"
+import Button from "./components/Button"
 
 const Home = () => {
     return (
@@ -15,6 +15,18 @@ const Home = () => {
             <article>
                 <h1>Explore<span> </span>New Perspectives</h1>
                 <p>Dive into the world of on-ice officiating as we share a whole new perspective of the game.</p>
+                <div>
+                    <Button
+                        text="Learn More"
+                        variant="primary"
+                        link="/"
+                    />
+                    <Button
+                        text="Photo Gallery"
+                        variant="secondary"
+                        link="/"
+                    />
+                </div>
             </article>
         </div>
     )

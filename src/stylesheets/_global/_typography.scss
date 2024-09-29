@@ -22,7 +22,7 @@ h3 {
     font-size: 24px;
 }
 
-p, a {
+p, a, button {
     font-size: 18px;
     font-family: 'Poppins';
 }
@@ -30,9 +30,28 @@ p {
     line-height: 1.5;
 }
 a {
+    @include flex-wrap( nowrap, row, center, center );
     text-decoration: none;
+    position: relative;
+    transition: 0.2s ease-in-out;
 
     .link-border {
         border: 2px solid white;
+    }
+    &.text-link::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        border-bottom: 2px solid $primary;
+        z-index: -1;
+        scale: 0 1;
+        transition: 0.2s ease-in-out;
+    }
+    &:hover {
+
+        &::before {
+            scale: 1 1;
+        }
     }
 }

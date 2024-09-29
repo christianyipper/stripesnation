@@ -1,0 +1,43 @@
+footer {
+    @include flex-wrap( nowrap, column, center, center );
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0, rgba(0,0,0,1) 64px);
+    z-index: 999;
+
+    section {
+        @include flex-wrap( nowrap, column, center, center );
+    }
+    .footer-top {
+        @include flex-wrap( nowrap, column, center, center );
+        padding: 96px 0 64px 0;
+        gap: 16px;
+
+        .footer-icons {
+            @include flex-wrap( nowrap, row, center, center );
+            height: 64px;
+            gap: 16px;
+        }
+        .footer-links {
+            @include flex-wrap( nowrap, row, center, center );
+            gap: 32px;
+
+            hr {
+                width: 2px;
+                height: 2px;
+                background: white;
+                border-radius: 8px;
+            }
+        }
+    }
+    .footer-bot {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.05);
+
+        p {
+            font-size: 14px;
+        }
+    }
+}

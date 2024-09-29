@@ -1,7 +1,7 @@
 
 const NavText = ({ text, link }) => {
     return (
-        <a href={ link }>
+        <a className="nav-text" href={ link }>
             <p>{ text }</p>
             <div className="link-bgr-wrap">
                 <div className="link-bg"/>
