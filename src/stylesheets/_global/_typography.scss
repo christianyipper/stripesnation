@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'StripesNation';
+    src: url('../assets/fonts/StripesNationFont.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    color: white;
+}
+
+h1, h2, h3 {
+    font-family: 'StripesNation';
+}
+h1 {
+    font-size: 64px;
+}
+h2 {
+    font-size: 36px;
+}
+h3 {
+    font-size: 24px;
+}
+
+p, a {
+    font-size: 18px;
+}
+a {
+    text-decoration: none;
+
+    .link-border {
+        border: 2px solid white;
+    }
+}

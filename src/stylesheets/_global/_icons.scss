@@ -1,0 +1,27 @@
+.sn-red {
+    fill: #ed1c24;
+}
+
+// === ICONS ===
+.icon {
+    width: 48px;
+}
+.icon-stroke {
+    fill: #fff;
+    stroke-width: 0px;
+}
+.icon-border {
+    fill: transparent;
+    transition: 0.2s ease-in-out;
+}
+.icon-link {
+    @include flex-wrap( nowrap, row, center, center );
+    transition: 0.2s ease-in-out;
+}
+.icon-link:hover {
+    scale: 0.9;
+
+    .icon-border {
+        fill: white;
+    }
+}

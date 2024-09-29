@@ -1,9 +1,12 @@
+
 const Home = () => {
     return (
-        <div className='App'>
+        <main className='home'>
+            <section>
 
-        </div>
-    );
+            </section>
+        </main>
+    )
 }
 
 export default Home;
