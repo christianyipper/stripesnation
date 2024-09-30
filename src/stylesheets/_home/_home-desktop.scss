@@ -26,10 +26,8 @@
             animation: parallax-load-right 3s ease-in-out;
 
             .img-overlay {
-                height: 125vh;
+                @include overlay( 125vh );
                 aspect-ratio: 3 / 2;
-                position: absolute;
-                background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 33%, rgba(0,0,0,0) 66%, rgba(0,0,0,1) 100%);
             }
         }
     }

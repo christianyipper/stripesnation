@@ -17,15 +17,18 @@ const Nav = () => {
                 <section className="nav-mid">
                     <NavText
                         text="Gallery"
-                        link="/"
+                        link="/gallery"
+                        active="gallery-active"
                     />
                     <NavText
                         text="About"
-                        link="/"
+                        link="/about"
+                        active="about-active"
                     />
                     <NavText
                         text="Contact"
-                        link="/"
+                        link="/contact"
+                        active="contact-active"
                     />
                 </section>
                 <section className="nav-right">

@@ -67,15 +67,16 @@ a .link-border {
 a.text-link::before {
   content: "";
   position: absolute;
-  width: 50%;
+  width: 100%;
   height: 100%;
-  border-bottom: 2px solid #ed1c24;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.4);
   z-index: -1;
-  scale: 0 1;
+  scale: 0.4 0.9;
   transition: 0.2s ease-in-out;
 }
 a:hover::before {
-  scale: 1 1;
+  scale: 0.9 0.9;
+  border-color: #ed1c24;
 }
 
 .sn-red {
@@ -207,6 +208,7 @@ nav .nav-text:hover .link-bg {
   justify-content: center;
   align-items: center;
   margin: 0;
+  transition: 0.2s ease-in-out;
 }
 .button .btn-bgr-wrap, .button .btn-bgl-wrap {
   position: absolute;
@@ -242,16 +244,19 @@ nav .nav-text:hover .link-bg {
   z-index: -1;
   scale: 1;
 }
+.button:hover p {
+  scale: 0.95;
+}
 .button:hover .btn-bgr-wrap, .button:hover .btn-bgl-wrap {
   opacity: 100%;
 }
 .button:hover .btn-bgr-wrap {
-  top: 4px;
-  right: 8px;
+  top: 2px;
+  right: 6px;
 }
 .button:hover .btn-bgl-wrap {
-  bottom: 4px;
-  left: 8px;
+  bottom: 2px;
+  left: 6px;
 }
 .button:hover.primary {
   background: transparent;
@@ -262,6 +267,11 @@ nav .nav-text:hover .link-bg {
 .button:hover.secondary {
   border-color: transparent;
 }
+.button:hover.tertiary {
+  border-color: transparent;
+  -webkit-backdrop-filter: blur(0px);
+          backdrop-filter: blur(0px);
+}
 .button.primary {
   background: white;
 }
@@ -270,6 +280,11 @@ nav .nav-text:hover .link-bg {
 }
 .button.secondary {
   border-color: white;
+}
+.button.tertiary {
+  border-color: white;
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
 }
 
 nav {
@@ -427,9 +442,9 @@ footer .footer-bot p {
 }
 .home .img-wrap .img-bg .img-overlay {
   height: 125vh;
-  aspect-ratio: 3/2;
   position: absolute;
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 66%, rgb(0, 0, 0) 100%);
+  aspect-ratio: 3/2;
 }
 .home article {
   display: flex;
@@ -501,5 +516,201 @@ footer .footer-bot p {
   }
   100% {
     opacity: 100%;
+  }
+}
+.contact {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0 80px;
+  max-width: 1280px;
+  width: 100%;
+  gap: 24px;
+}
+.contact .img-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  width: 100%;
+  height: 100vh;
+  bottom: 320px;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+.contact .img-wrap img {
+  height: 110vh;
+  aspect-ratio: 16/9;
+}
+.contact .img-wrap .parallax-front {
+  position: absolute;
+  animation: ani-mask-front 2.7s steps(32) forwards;
+  z-index: -2;
+  -webkit-mask: url("../assets/img/inkmask-inv.png");
+          mask: url("../assets/img/inkmask-inv.png");
+  -webkit-mask-size: 3300% 100%;
+          mask-size: 3300% 100%;
+}
+.contact .img-wrap .parallax-back {
+  animation: ani-mask-right 2s steps(32) forwards;
+  z-index: -3;
+  -webkit-mask: url("../assets/img/inkmask-right.png");
+          mask: url("../assets/img/inkmask-right.png");
+  -webkit-mask-size: 100% 3300%;
+          mask-size: 100% 3300%;
+  opacity: 75%;
+}
+.contact .img-wrap .img-overlay {
+  height: 110vh;
+  aspect-ratio: 16/9;
+  position: absolute;
+  background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 75%, rgb(0, 0, 0) 100%);
+  z-index: 1;
+}
+.contact .content {
+  grid-column: 1/span 12;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contact .content > article {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 128px;
+}
+.contact .content > article h1 {
+  opacity: 0;
+  margin: 0;
+  animation: contact-load 3s ease-in-out forwards;
+}
+.contact .content > article > div {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-top: -16px;
+  opacity: 0;
+  animation: contact-load 3s 0.2s ease-in-out forwards;
+}
+.contact .content > article > div hr {
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 8px;
+}
+.contact .content > div {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 64%;
+  margin-top: 48px;
+}
+.contact .content > div article {
+  opacity: 0;
+}
+.contact .content > div article:nth-child(1) {
+  animation: contact-load 3s 0.8s ease-in-out forwards;
+}
+.contact .content > div article:nth-child(2) {
+  animation: contact-load 3s 1s ease-in-out forwards;
+}
+.contact .content > div article:nth-child(3) {
+  animation: contact-load 3s 1.2s ease-in-out forwards;
+}
+.contact .content > div .description {
+  font-size: 14px;
+  margin-top: 8px;
+  opacity: 60%;
+}
+
+@keyframes ani-mask-back {
+  0% {
+    -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+  }
+  50% {
+    -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+  }
+  100% {
+    -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+  }
+}
+@keyframes ani-mask-front {
+  0% {
+    -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+  }
+  60% {
+    -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+  }
+  100% {
+    -webkit-mask-position: 100% 0;
+            mask-position: 100% 0;
+  }
+}
+@keyframes ani-mask-left {
+  0% {
+    -webkit-mask-position: 0 100%;
+            mask-position: 0 100%;
+  }
+  66% {
+    -webkit-mask-position: 0 100%;
+            mask-position: 0 100%;
+  }
+  100% {
+    -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+  }
+}
+@keyframes ani-mask-right {
+  0% {
+    -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+  }
+  50% {
+    -webkit-mask-position: 0 0;
+            mask-position: 0 0;
+  }
+  100% {
+    -webkit-mask-position: 0 100%;
+            mask-position: 0 100%;
+  }
+}
+@keyframes contact-img-load {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+@keyframes contact-load {
+  0% {
+    opacity: 0;
+    transform: scale(0.75);
+  }
+  50% {
+    opacity: 0;
+    transform: scale(0.75);
+  }
+  100% {
+    opacity: 100%;
+    transform: scale(1);
   }
 }/*# sourceMappingURL=style.css.map */

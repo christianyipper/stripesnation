@@ -8,6 +8,7 @@
     p {
         @include flex-wrap( nowrap, row, center, center );
         margin: 0;
+        transition: 0.2s ease-in-out;
     }
     .btn-bgr-wrap, .btn-bgl-wrap {
         position: absolute;
@@ -46,16 +47,19 @@
         scale: 1;
     }
     &:hover {
+        p {
+            scale: 0.95;
+        }
         .btn-bgr-wrap, .btn-bgl-wrap {
             opacity: 100%;
         }
         .btn-bgr-wrap {
-            top: 4px;
-            right: 8px;
+            top: 2px;
+            right: 6px;
         }
         .btn-bgl-wrap {
-            bottom: 4px;
-            left: 8px;
+            bottom: 2px;
+            left: 6px;
         }
         &.primary {
             background: transparent;
@@ -65,6 +69,10 @@
         }
         &.secondary {
             border-color: transparent;
+        }
+        &.tertiary {
+            border-color: transparent;
+            backdrop-filter: blur( 0px );
         }
     }
 
@@ -76,5 +84,9 @@
     }
     &.secondary {
         border-color: white;
+    }
+    &.tertiary {
+        border-color: white;
+        backdrop-filter: blur( 8px );
     }
 }

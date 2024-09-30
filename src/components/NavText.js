@@ -1,5 +1,5 @@
 
-const NavText = ({ text, link }) => {
+const NavText = ({ text, link, active }) => {
     return (
         <a className="nav-text" href={ link }>
             <p>{ text }</p>
@@ -9,7 +9,7 @@ const NavText = ({ text, link }) => {
             <div className="link-bgl-wrap">
                 <div className="link-bg"/>
             </div>
-            <div className="link-active link-gallery"/>
+            <div className={`link-active ${ active }`}/>
         </a>
     )
 }
