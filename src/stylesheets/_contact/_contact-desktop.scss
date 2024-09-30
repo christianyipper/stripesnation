@@ -11,13 +11,13 @@
         z-index: -1;
 
         img {
+            top: -10vh;
             max-height: 125vh;
             max-width: 100%;
-            // aspect-ratio: 16 / 9;
             aspect-ratio: 3 / 2;
+            position: absolute;
         }
         .img-front {
-            position: absolute;
             animation: ani-mask-front 2.7s steps(32) forwards;
             z-index: -2;
             mask: url('../assets/img/inkmask-inv.png');

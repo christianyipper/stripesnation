@@ -19,12 +19,12 @@ const Home = () => {
                     <Button
                         text="Learn More"
                         variant="primary"
-                        link="/"
+                        link="/about"
                     />
                     <Button
                         text="Photo Gallery"
                         variant="secondary"
-                        link="/"
+                        link="/gallery"
                     />
                 </div>
             </article>
