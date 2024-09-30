@@ -13,7 +13,8 @@
 
         img {
             margin-top: -5vh;
-            height: 125vh;
+            max-height: 125vh;
+            max-width: 100%;
             aspect-ratio: 3 / 2;
             z-index: -1;
         }
@@ -26,7 +27,7 @@
             animation: parallax-load-right 3s ease-in-out;
 
             .img-overlay {
-                @include overlay( 125vh );
+                @include overlay( 100%, 125vh );
                 aspect-ratio: 3 / 2;
             }
         }

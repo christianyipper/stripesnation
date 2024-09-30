@@ -30,7 +30,8 @@
     }
 }
 
-@mixin overlay( $height ) {
+@mixin overlay( $width, $height ) {
+    max-width: $width;
     height: $height;
     position: absolute;
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 33%, rgba(0,0,0,0) 66%, rgba(0,0,0,1) 100%);
