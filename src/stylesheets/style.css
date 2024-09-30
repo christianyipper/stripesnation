@@ -15,6 +15,23 @@ main {
   padding-bottom: 293px;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, black, rgb(20, 20, 20));
+  background-size: 100% 100%;
+  background-position: 100% 100%;
+  border-radius: 0 0 32px 32px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
 @font-face {
   font-family: "StripesNation";
   src: url("../assets/fonts/StripesNationFont.ttf");
@@ -117,6 +134,14 @@ a:hover::before {
   fill: white;
 }
 
+@keyframes ani-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 nav .nav-text {
   display: flex;
   flex-wrap: nowrap;
@@ -543,7 +568,7 @@ footer .footer-bot p {
   height: 110vh;
   aspect-ratio: 16/9;
 }
-.contact .img-wrap .parallax-front {
+.contact .img-wrap .img-front {
   position: absolute;
   animation: ani-mask-front 2.7s steps(32) forwards;
   z-index: -2;
@@ -552,14 +577,14 @@ footer .footer-bot p {
   -webkit-mask-size: 3300% 100%;
           mask-size: 3300% 100%;
 }
-.contact .img-wrap .parallax-back {
+.contact .img-wrap .img-back {
   animation: ani-mask-right 2s steps(32) forwards;
   z-index: -3;
   -webkit-mask: url("../assets/img/inkmask-right.png");
           mask: url("../assets/img/inkmask-right.png");
   -webkit-mask-size: 100% 3300%;
           mask-size: 100% 3300%;
-  opacity: 75%;
+  opacity: 50%;
 }
 .contact .img-wrap .img-overlay {
   height: 110vh;
@@ -587,7 +612,7 @@ footer .footer-bot p {
 .contact .content > article h1 {
   opacity: 0;
   margin: 0;
-  animation: contact-load 3s ease-in-out forwards;
+  animation: contact-scale 2s 1.5s ease-in-out forwards;
 }
 .contact .content > article > div {
   display: flex;
@@ -598,7 +623,7 @@ footer .footer-bot p {
   gap: 32px;
   margin-top: -16px;
   opacity: 0;
-  animation: contact-load 3s 0.2s ease-in-out forwards;
+  animation: contact-scale 2s 1.7s ease-in-out forwards;
 }
 .contact .content > article > div hr {
   width: 4px;
@@ -615,22 +640,38 @@ footer .footer-bot p {
   width: 64%;
   margin-top: 48px;
 }
-.contact .content > div article {
-  opacity: 0;
-}
-.contact .content > div article:nth-child(1) {
-  animation: contact-load 3s 0.8s ease-in-out forwards;
-}
-.contact .content > div article:nth-child(2) {
-  animation: contact-load 3s 1s ease-in-out forwards;
-}
-.contact .content > div article:nth-child(3) {
-  animation: contact-load 3s 1.2s ease-in-out forwards;
-}
 .contact .content > div .description {
   font-size: 14px;
-  margin-top: 8px;
-  opacity: 60%;
+  margin-top: 4px;
+  color: rgba(220, 220, 220, 0.6);
+  opacity: 0;
+}
+.contact .content > div article:nth-child(1) .button {
+  animation: contact-fade 3.5s ease-in-out;
+}
+.contact .content > div article:nth-child(1) .button > p {
+  animation: contact-fade 3.5s ease-in-out;
+}
+.contact .content > div article:nth-child(1) .description {
+  animation: ani-opacity 1s 2.1s ease-in-out forwards;
+}
+.contact .content > div article:nth-child(2) .button {
+  animation: contact-fade 3.7s ease-in-out;
+}
+.contact .content > div article:nth-child(2) .button > p {
+  animation: contact-fade 3.7s ease-in-out;
+}
+.contact .content > div article:nth-child(2) .description {
+  animation: ani-opacity 1s 2.3s ease-in-out forwards;
+}
+.contact .content > div article:nth-child(3) .button {
+  animation: contact-fade 3.9s ease-in-out;
+}
+.contact .content > div article:nth-child(3) .button > p {
+  animation: contact-fade 3.9s ease-in-out;
+}
+.contact .content > div article:nth-child(3) .description {
+  animation: ani-opacity 1s 2.5s ease-in-out forwards;
 }
 
 @keyframes ani-mask-back {
@@ -638,7 +679,7 @@ footer .footer-bot p {
     -webkit-mask-position: 0 0;
             mask-position: 0 0;
   }
-  50% {
+  33% {
     -webkit-mask-position: 0 0;
             mask-position: 0 0;
   }
@@ -700,17 +741,27 @@ footer .footer-bot p {
     opacity: 100%;
   }
 }
-@keyframes contact-load {
+@keyframes contact-scale {
   0% {
-    opacity: 0;
-    transform: scale(0.75);
-  }
-  50% {
     opacity: 0;
     transform: scale(0.75);
   }
   100% {
     opacity: 100%;
     transform: scale(1);
+  }
+}
+@keyframes contact-fade {
+  0% {
+    color: transparent;
+    border-color: transparent;
+  }
+  57% {
+    color: transparent;
+    border-color: transparent;
+  }
+  100% {
+    color: white;
+    border-color: white;
   }
 }/*# sourceMappingURL=style.css.map */

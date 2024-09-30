@@ -14,19 +14,19 @@
             height: 110vh;
             aspect-ratio: 16 / 9;
         }
-        .parallax-front {
+        .img-front {
             position: absolute;
             animation: ani-mask-front 2.7s steps(32) forwards;
             z-index: -2;
             mask: url('../assets/img/inkmask-inv.png');
             mask-size: 3300% 100%;
         }
-        .parallax-back {
+        .img-back {
             animation: ani-mask-right 2s steps(32) forwards;
             z-index: -3;
             mask: url('../assets/img/inkmask-right.png');
             mask-size: 100% 3300%;
-            opacity: 75%;
+            opacity: 50%;
         }
         .img-overlay {
             height: 110vh;
@@ -47,14 +47,14 @@
             h1 {
                 opacity: 0;
                 margin: 0;
-                animation: contact-load 3s ease-in-out forwards;
+                animation: contact-scale 2s 1.5s ease-in-out forwards;
             }
             > div {
                 @include flex-wrap( nowrap, row, center, center );
                 gap: 32px;
                 margin-top: -16px;
                 opacity: 0;
-                animation: contact-load 3s 0.2s ease-in-out forwards;
+                animation: contact-scale 2s 1.7s ease-in-out forwards;
 
                 hr {
                     width: 4px;
@@ -69,22 +69,48 @@
             width: 64%;
             margin-top: 48px;
 
-            article {
-                opacity: 0;
-            }
+                .description {
+                    font-size: 14px;
+                    margin-top: 4px;
+                    color: rgba(220, 220, 220, 0.6);
+                    opacity: 0;
+                }
+
             article:nth-child(1) {
-                animation: contact-load 3s 0.8s ease-in-out forwards;
+                .button {
+                    animation: contact-fade 3.5s ease-in-out;
+
+                    > p {
+                        animation: contact-fade 3.5s ease-in-out;
+                    }
+                }
+                .description {
+                    animation: ani-opacity 1s 2.1s ease-in-out forwards;
+                }
             }
             article:nth-child(2) {
-                animation: contact-load 3s 1s ease-in-out forwards;
+                .button {
+                    animation: contact-fade 3.7s ease-in-out;
+
+                    > p {
+                        animation: contact-fade 3.7s ease-in-out;
+                    }
+                }
+                .description {
+                    animation: ani-opacity 1s 2.3s ease-in-out forwards;
+                }
             }
             article:nth-child(3) {
-                animation: contact-load 3s 1.2s ease-in-out forwards;
-            }
-            .description {
-                font-size: 14px;
-                margin-top: 8px;
-                opacity: 60%;
+                .button {
+                    animation: contact-fade 3.9s ease-in-out;
+
+                    > p {
+                        animation: contact-fade 3.9s ease-in-out;
+                    }
+                }
+                .description {
+                    animation: ani-opacity 1s 2.5s ease-in-out forwards;
+                }
             }
         }
     }
@@ -93,7 +119,7 @@
     0% {
         mask-position: 0 0;
     }
-    50% {
+    33% {
         mask-position: 0 0;
     }
     100% {
@@ -144,17 +170,27 @@
         opacity: 100%;
     }
 }
-@keyframes contact-load {
+@keyframes contact-scale {
     0% {
-        opacity: 0;
-        transform: scale(0.75);
-    }
-    50% {
         opacity: 0;
         transform: scale(0.75);
     }
     100% {
         opacity: 100%;
         transform: scale(1);
+    }
+}
+@keyframes contact-fade {
+    0% {
+        color: transparent;
+        border-color: transparent;
+    }
+    57% {
+        color: transparent;
+        border-color: transparent;
+    }
+    100% {
+        color: white;
+        border-color: white;
     }
 }

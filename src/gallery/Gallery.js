@@ -3,7 +3,7 @@ const Gallery = () => {
         <div className='App'>
 
         </div>
-    );
+    )
 }
 
 export default Gallery;

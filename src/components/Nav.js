@@ -32,13 +32,13 @@ const Nav = () => {
                     />
                 </section>
                 <section className="nav-right">
-                    <a className="icon-link" href="">
+                    <a className="icon-link" href="" target="_blank">
                         <Instagram/>
                     </a>
-                    <a className="icon-link" href="">
+                    <a className="icon-link" href="" target="_blank">
                         <Facebook/>
                     </a>
-                    <a className="icon-link" href="">
+                    <a className="icon-link" href="" target="_blank">
                         <Linkedin/>
                     </a>
                 </section>

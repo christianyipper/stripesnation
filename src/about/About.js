@@ -1,9 +1,9 @@
 const About = () => {
     return (
-        <div className='App'>
+        <div className='about'>
 
         </div>
-    );
+    )
 }
 
 export default About;

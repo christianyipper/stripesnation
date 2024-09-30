@@ -7,8 +7,8 @@ const Home = () => {
         <div className='contact'>
             <section className="img-wrap">
                     <div className="img-overlay"/>
-                    <img className="parallax-front" src={ Wallpaper } alt=""/>
-                    <img className="parallax-back" src={ WallpaperHalf } alt=""/>
+                    <img className="img-front" src={ Wallpaper } alt=""/>
+                    <img className="img-back" src={ WallpaperHalf } alt=""/>
             </section>
             <section className="content">
                 <article>
@@ -26,7 +26,8 @@ const Home = () => {
                         <Button
                             text="www.yipper.ca"
                             variant="tertiary"
-                            link="yipper.ca"
+                            link="https://www.yipper.ca"
+                            target="_blank"
                         />
                         <p className="description">Dev Portfolio</p>
                     </article>
@@ -35,6 +36,7 @@ const Home = () => {
                             text="christian@yipper.ca"
                             variant="tertiary"
                             link="christian@yipper.ca"
+                            target="_blank"
                         />
                         <p className="description">Business Email</p>
                     </article>
@@ -42,7 +44,8 @@ const Home = () => {
                         <Button
                             text="in/christianyipper"
                             variant="tertiary"
-                            link="christian@yipper.ca"
+                            link="https://www.linkedin.com/in/christianyipper/"
+                            target="_blank"
                         />
                         <p className="description">Personal LinkedIn</p>
                     </article>
