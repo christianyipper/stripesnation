@@ -26,8 +26,8 @@ const Nav = () => {
                         active="about-active"
                     />
                     <NavText
-                        text="Contact"
-                        link="/contact"
+                        text="Connect"
+                        link="/connect"
                         active="contact-active"
                     />
                 </section>

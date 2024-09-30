@@ -24,11 +24,11 @@ const Footer = () => {
                     </a>
                 </div>
                 <div className="footer-links">
-                    <a className="text-link" href="">Gallery</a>
+                    <a className="text-link" href="/gallery">Gallery</a>
                     <hr/>
-                    <a className="text-link" href="">About</a>
+                    <a className="text-link" href="/about">About</a>
                     <hr/>
-                    <a className="text-link" href="">Contact</a>
+                    <a className="text-link" href="/connect">Connect</a>
                     <hr/>
                     <a className="text-link" href="">Branding</a>
                     <hr/>

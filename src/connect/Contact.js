@@ -2,7 +2,7 @@ import Wallpaper from "../assets/img/yipper-wallpaper.jpg";
 import WallpaperHalf from "../assets/img/yipper-wallpaper-half.jpg";
 import Button from "../components/Button";
 
-const Home = () => {
+const Contact = () => {
     return (
         <div className='contact'>
             <section className="img-wrap">
@@ -55,4 +55,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Contact;
