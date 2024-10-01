@@ -1311,6 +1311,7 @@ footer .footer-bot p {
     height: 100vh;
     bottom: 320px;
     left: 0;
+    overflow: hidden;
     position: absolute;
     z-index: -1;
   }
@@ -1340,7 +1341,7 @@ footer .footer-bot p {
   }
   .contact .img-wrap .img-overlay {
     display: flex;
-    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 100%);
     width: 100vw;
     height: 100vh;
     margin-top: 0;
