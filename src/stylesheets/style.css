@@ -780,7 +780,7 @@ footer .footer-bot p {
     padding: 16px;
     height: auto;
     z-index: 1;
-    background: rgba(0, 0, 0, 0.25);
+    background: rgba(0, 0, 0, 0.3);
     -webkit-backdrop-filter: blur(12px);
             backdrop-filter: blur(12px);
     border-radius: 8px;
@@ -1293,5 +1293,157 @@ footer .footer-bot p {
     border-color: white;
     -webkit-backdrop-filter: blur(8px);
             backdrop-filter: blur(8px);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .contact {
+    display: grid;
+    grid-template-columns: 4fr;
+    padding: 0 16px;
+  }
+  .contact .img-wrap {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    height: 100vh;
+    bottom: 320px;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+  }
+  .contact .img-wrap img {
+    top: 0;
+    margin-left: 100px;
+    max-height: 100vh;
+    max-width: none;
+    aspect-ratio: 3/2;
+  }
+  .contact .img-wrap .img-front {
+    animation: ani-mask-front 2.7s steps(32) forwards;
+    z-index: -2;
+    -webkit-mask: url("../assets/img/inkmask-inv.png");
+            mask: url("../assets/img/inkmask-inv.png");
+    -webkit-mask-size: 3300% 100%;
+            mask-size: 3300% 100%;
+  }
+  .contact .img-wrap .img-back {
+    animation: ani-mask-right 2s steps(32) forwards;
+    z-index: -3;
+    -webkit-mask: url("../assets/img/inkmask-right.png");
+            mask: url("../assets/img/inkmask-right.png");
+    -webkit-mask-size: 100% 3300%;
+            mask-size: 100% 3300%;
+    opacity: 50%;
+  }
+  .contact .img-wrap .img-overlay {
+    display: flex;
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 100%);
+    width: 100vw;
+    height: 100vh;
+    margin-top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+  }
+  .contact .content {
+    grid-column: 1/span 4;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+  }
+  .contact .content > article {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    margin-top: 96px;
+    width: 100%;
+  }
+  .contact .content > article h1 {
+    opacity: 0;
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 38px;
+    animation: contact-scale 2s 1.5s ease-in-out forwards;
+  }
+  .contact .content > article > div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7%;
+    margin-top: -16px;
+    opacity: 0;
+    animation: contact-scale 2s 1.7s ease-in-out forwards;
+  }
+  .contact .content > article > div hr {
+    width: 8px;
+    height: 4px;
+    background: white;
+    border-radius: 8px;
+  }
+  .contact .content > article > div p {
+    font-size: 14px;
+    width: -moz-fit-content;
+    width: fit-content;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: 500;
+  }
+  .contact .content > div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    width: 64%;
+    margin-top: 24px;
+  }
+  .contact .content > div .description {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    font-size: 14px;
+    margin-top: 4px;
+    color: rgba(220, 220, 220, 0.6);
+    opacity: 0;
+  }
+  .contact .content > div article:nth-child(1) .button {
+    animation: contact-fade 4s ease-in-out;
+  }
+  .contact .content > div article:nth-child(1) .button > p {
+    animation: contact-fade 4s ease-in-out;
+  }
+  .contact .content > div article:nth-child(1) .description {
+    animation: ani-opacity 1s 2.6s ease-in-out forwards;
+  }
+  .contact .content > div article:nth-child(2) .button {
+    animation: contact-fade 4.2s ease-in-out;
+  }
+  .contact .content > div article:nth-child(2) .button > p {
+    animation: contact-fade 4.2s ease-in-out;
+  }
+  .contact .content > div article:nth-child(2) .description {
+    animation: ani-opacity 1s 2.8s ease-in-out forwards;
+  }
+  .contact .content > div article:nth-child(3) .button {
+    animation: contact-fade 4.4s ease-in-out;
+  }
+  .contact .content > div article:nth-child(3) .button > p {
+    animation: contact-fade 4.4s ease-in-out;
+  }
+  .contact .content > div article:nth-child(3) .description {
+    animation: ani-opacity 1s 3s ease-in-out forwards;
   }
 }/*# sourceMappingURL=style.css.map */
