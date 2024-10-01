@@ -57,3 +57,19 @@ a {
         }
     }
 }
+
+@media only screen and ( max-width: 500px ) {
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 32px;
+        margin: 18px 0;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    p, a, button {
+        font-size: 16px;
+    }
+}
