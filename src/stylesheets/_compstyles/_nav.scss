@@ -34,6 +34,9 @@ nav {
             height: 64px;
             gap: 16px;
         }
+        .nav-burger {
+            display: none;
+        }
     }
 }
 @media only screen and ( max-width: 500px ) {
@@ -70,6 +73,7 @@ nav {
             .nav-burger {
                 @include flex-wrap( nowrap, row, end, center );
                 position: absolute;
+                display: flex;
                 top: 0;
                 right: 16px;
                 width: 64px;
