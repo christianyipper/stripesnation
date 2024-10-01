@@ -256,6 +256,7 @@ nav .nav-text:hover .link-bg {
   align-items: center;
   margin: 0;
   transition: 0.2s ease-in-out;
+  font-weight: 500;
 }
 .button .btn-bgr-wrap, .button .btn-bgl-wrap {
   position: absolute;
@@ -1170,31 +1171,31 @@ footer .footer-bot p {
   opacity: 0;
 }
 .contact .content > div article:nth-child(1) .button {
-  animation: contact-fade 3.5s ease-in-out;
+  animation: contact-fade 4.2s ease-in-out;
 }
 .contact .content > div article:nth-child(1) .button > p {
-  animation: contact-fade 3.5s ease-in-out;
+  animation: contact-fade 4.2s ease-in-out;
 }
 .contact .content > div article:nth-child(1) .description {
-  animation: ani-opacity 1s 2.1s ease-in-out forwards;
+  animation: ani-opacity 1s 2.8s ease-in-out forwards;
 }
 .contact .content > div article:nth-child(2) .button {
-  animation: contact-fade 3.7s ease-in-out;
+  animation: contact-fade 4s ease-in-out;
 }
 .contact .content > div article:nth-child(2) .button > p {
-  animation: contact-fade 3.7s ease-in-out;
+  animation: contact-fade 4s ease-in-out;
 }
 .contact .content > div article:nth-child(2) .description {
-  animation: ani-opacity 1s 2.3s ease-in-out forwards;
+  animation: ani-opacity 1s 2.6s ease-in-out forwards;
 }
 .contact .content > div article:nth-child(3) .button {
-  animation: contact-fade 3.9s ease-in-out;
+  animation: contact-fade 4.4s ease-in-out;
 }
 .contact .content > div article:nth-child(3) .button > p {
-  animation: contact-fade 3.9s ease-in-out;
+  animation: contact-fade 4.4s ease-in-out;
 }
 .contact .content > div article:nth-child(3) .description {
-  animation: ani-opacity 1s 2.5s ease-in-out forwards;
+  animation: ani-opacity 1s 3s ease-in-out forwards;
 }
 
 @keyframes ani-mask-back {
@@ -1278,13 +1279,19 @@ footer .footer-bot p {
   0% {
     color: transparent;
     border-color: transparent;
+    -webkit-backdrop-filter: blur(0);
+            backdrop-filter: blur(0);
   }
   57% {
     color: transparent;
     border-color: transparent;
+    -webkit-backdrop-filter: blur(0);
+            backdrop-filter: blur(0);
   }
   100% {
     color: white;
     border-color: white;
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
   }
 }/*# sourceMappingURL=style.css.map */

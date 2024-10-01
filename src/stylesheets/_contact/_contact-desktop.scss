@@ -72,47 +72,46 @@
             width: 64%;
             margin-top: 48px;
 
-                .description {
-                    font-size: 14px;
-                    margin-top: 4px;
-                    color: rgba(220, 220, 220, 0.6);
-                    opacity: 0;
-                }
-
+            .description {
+                font-size: 14px;
+                margin-top: 4px;
+                color: rgba(220, 220, 220, 0.6);
+                opacity: 0;
+            }
             article:nth-child(1) {
                 .button {
-                    animation: contact-fade 3.5s ease-in-out;
+                    animation: contact-fade 4.2s ease-in-out;
 
                     > p {
-                        animation: contact-fade 3.5s ease-in-out;
+                        animation: contact-fade 4.2s ease-in-out;
                     }
                 }
                 .description {
-                    animation: ani-opacity 1s 2.1s ease-in-out forwards;
+                    animation: ani-opacity 1s 2.8s ease-in-out forwards;
                 }
             }
             article:nth-child(2) {
                 .button {
-                    animation: contact-fade 3.7s ease-in-out;
+                    animation: contact-fade 4s ease-in-out;
 
                     > p {
-                        animation: contact-fade 3.7s ease-in-out;
+                        animation: contact-fade 4s ease-in-out;
                     }
                 }
                 .description {
-                    animation: ani-opacity 1s 2.3s ease-in-out forwards;
+                    animation: ani-opacity 1s 2.6s ease-in-out forwards;
                 }
             }
             article:nth-child(3) {
                 .button {
-                    animation: contact-fade 3.9s ease-in-out;
+                    animation: contact-fade 4.4s ease-in-out;
 
                     > p {
-                        animation: contact-fade 3.9s ease-in-out;
+                        animation: contact-fade 4.4s ease-in-out;
                     }
                 }
                 .description {
-                    animation: ani-opacity 1s 2.5s ease-in-out forwards;
+                    animation: ani-opacity 1s 3s ease-in-out forwards;
                 }
             }
         }
@@ -187,13 +186,16 @@
     0% {
         color: transparent;
         border-color: transparent;
+        backdrop-filter: blur(0);
     }
     57% {
         color: transparent;
         border-color: transparent;
+        backdrop-filter: blur(0);
     }
     100% {
         color: white;
         border-color: white;
+        backdrop-filter: blur(8px);
     }
 }
