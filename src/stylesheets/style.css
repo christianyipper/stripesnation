@@ -35,7 +35,7 @@ main {
 @media only screen and (max-width: 500px) {
   main {
     min-height: 100vh;
-    padding-bottom: 220px;
+    padding-bottom: 270px;
   }
 }
 @font-face {
@@ -392,6 +392,87 @@ nav > div .nav-right {
   gap: 16px;
 }
 
+@media only screen and (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+  }
+  nav > div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+  nav > div .nav-left {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 16px;
+    width: 64px;
+    height: 64px;
+  }
+  nav > div .nav-mid {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    gap: 32px;
+  }
+  nav > div .nav-right {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    margin-top: 32px;
+    gap: 16px;
+  }
+  nav > div .nav-burger {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 16px;
+    width: 64px;
+    height: 64px;
+  }
+  nav > div .nav-burger svg {
+    position: absolute;
+    margin-right: -8px;
+    width: 48px;
+    transition: 0.2s ease-in-out;
+  }
+  nav > div .show {
+    opacity: 100%;
+  }
+  nav > div .hide {
+    opacity: 0;
+  }
+  .menu-open {
+    height: 100vh;
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+  }
+}
 footer {
   display: flex;
   flex-wrap: nowrap;
@@ -660,14 +741,14 @@ footer .footer-bot p {
     display: grid;
     grid-template-columns: 4fr;
     padding: 0 16px;
-    grid-template-rows: 50vh;
+    grid-template-rows: 56vh;
   }
   .home .img-wrap {
     width: 100%;
     height: 100vh;
   }
   .home .img-wrap img {
-    margin-top: -6vh;
+    margin-top: -1px;
     max-height: 100vh;
     max-width: none;
   }
@@ -687,7 +768,7 @@ footer .footer-bot p {
     background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 33%, rgba(0, 0, 0, 0) 100%);
     width: 100vw;
     height: 100vh;
-    margin-top: calc(-6vh + 1px);
+    margin-top: 0;
     left: 0;
     position: absolute;
     z-index: 1;
