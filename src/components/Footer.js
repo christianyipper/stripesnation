@@ -29,7 +29,14 @@ const Footer = () => {
                     <a className="text-link" href="/about">About</a>
                     <hr/>
                     <a className="text-link" href="/connect">Connect</a>
-                    <hr/>
+                    <span>
+                        <hr/>
+                        <a className="text-link" href="">Branding</a>
+                        <hr/>
+                        <a className="text-link" href="">Legal</a>
+                    </span>
+                </div>
+                <div className="footer-links-mobile">
                     <a className="text-link" href="">Branding</a>
                     <hr/>
                     <a className="text-link" href="">Legal</a>

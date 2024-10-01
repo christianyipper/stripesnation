@@ -11,6 +11,7 @@ const Home = () => {
                     <div className="img-overlay"/>
                     <img className="parallax-back" src={ HomeParallaxBg } alt="" />
                 </div>
+                <div className="mobile-img-overlay"/>
             </section>
             <article>
                 <h1>Explore<span> </span>New Perspectives</h1>

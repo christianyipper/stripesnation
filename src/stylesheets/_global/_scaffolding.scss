@@ -24,3 +24,10 @@ main {
     border-radius: 0 0 32px 32px;
     transition: 0.2s ease-in-out;
 }
+
+@media only screen and ( max-width: 500px ) {
+    main {
+        min-height: 100vh;
+        padding-bottom: 220px;
+    }
+}

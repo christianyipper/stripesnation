@@ -31,6 +31,9 @@
                 aspect-ratio: 3 / 2;
             }
         }
+        .mobile-img-overlay {
+            display: none;
+        }
     }
     article {
         @include flex-wrap( nowrap, column, center, center );
