@@ -643,6 +643,7 @@ footer .footer-bot p {
   position: absolute;
   overflow: hidden;
   animation: parallax-load 3s ease-in-out;
+  z-index: -1;
 }
 .home .img-wrap img {
   margin-top: -5vh;
@@ -656,6 +657,7 @@ footer .footer-bot p {
   animation: parallax-load-left 3s ease-in-out;
 }
 .home .img-wrap .parallax-front .parallax-gif {
+  position: absolute;
   z-index: 2;
 }
 .home .img-wrap .img-bg {
@@ -753,9 +755,6 @@ footer .footer-bot p {
   .home .img-wrap .parallax-front {
     position: absolute;
     animation: parallax-load-left 3s ease-in-out;
-  }
-  .home .img-wrap .parallax-front .parallax-gif {
-    display: none;
   }
   .home .img-wrap .img-bg {
     z-index: -2;

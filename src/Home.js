@@ -1,5 +1,5 @@
 import HomeParallaxBg from "./assets/img/sn-parallax-bg.jpg"
-import HomeParallaxGif from "./assets/img/sn-parallax-jersey-1440.gif"
+import HomeParallaxGif from "./assets/img/jersey-animate-1440.gif"
 import HomeParallax from "./assets/img/sn-parallax-official.png"
 import Button from "./components/Button"
 

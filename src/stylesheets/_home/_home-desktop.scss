@@ -10,6 +10,7 @@
         position: absolute;
         overflow: hidden;
         animation: parallax-load 3s ease-in-out;
+        z-index: -1;
 
         img {
             margin-top: -5vh;
@@ -23,6 +24,7 @@
             animation: parallax-load-left 3s ease-in-out;
 
             .parallax-gif {
+                position: absolute;
                 z-index: 2;
             }
         }
