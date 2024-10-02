@@ -18,7 +18,7 @@
 @mixin layout( $breakpoint ) {
     @if $breakpoint == mobile {
         display: grid;
-        grid-template-columns: 4fr;
+        grid-template-columns: repeat(4, 1fr);
         padding: 0 16px;
     } @else if $breakpoint == desktop {
         display: grid;

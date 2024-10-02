@@ -2,7 +2,7 @@ const Gallery = () => {
     return (
         <div className='gallery'>
             <h1>Coming Soon</h1>
-            <section className="photo-grid grid-top">
+            {/* <section className="photo-grid grid-top">
                 <div className="a1">A1</div>
                 <div className="a2">A2</div>
                 <div className="a3">A3</div>
@@ -22,7 +22,7 @@ const Gallery = () => {
                 <div className="c3">C3</div>
                 <div className="c4">C4</div>
                 <div className="c5">C5</div>
-            </section>
+            </section> */}
         </div>
     )
 }

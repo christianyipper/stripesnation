@@ -1,4 +1,5 @@
 import HomeParallaxBg from "./assets/img/sn-parallax-bg.jpg"
+import HomeParallaxGif from "./assets/img/sn-parallax-jersey-1440.gif"
 import HomeParallax from "./assets/img/sn-parallax-official.png"
 import Button from "./components/Button"
 
@@ -6,7 +7,13 @@ const Home = () => {
     return (
         <div className='home'>
             <section className="img-wrap">
-                <img className="parallax-front" src={ HomeParallax } alt="" />
+                <div className="parallax-front">
+                    <img className="parallax-gif" src={ HomeParallaxGif } alt="" />
+                    {/* <video className="parallax-mov" loop autoPlay muted>
+                        <source src={ HomeParallaxMov } type="video/mov"/>
+                    </video> */}
+                    <img className="parallax-static" src={ HomeParallax } alt="" />
+                </div>
                 <div className="img-bg">
                     <div className="img-overlay"/>
                     <img className="parallax-back" src={ HomeParallaxBg } alt="" />
