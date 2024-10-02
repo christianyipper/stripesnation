@@ -18,16 +18,18 @@
             position: absolute;
         }
         .img-front {
-            animation: ani-mask-front 2.7s steps(32) forwards;
+            animation: ani-mask-front 1s 1.5s steps(32) forwards;
             z-index: -2;
             mask: url('../assets/img/inkmask-inv.png');
             mask-size: 3300% 100%;
+            mask-position: 0 0;
         }
         .img-back {
-            animation: ani-mask-right 2s steps(32) forwards;
+            animation: ani-mask-right 1s 0.75s steps(32) forwards;
             z-index: -3;
             mask: url('../assets/img/inkmask-right.png');
             mask-size: 100% 3300%;
+            mask-position: 0 0;
             opacity: 50%;
         }
         .img-overlay {
@@ -121,18 +123,12 @@
     0% {
         mask-position: 0 0;
     }
-    33% {
-        mask-position: 0 0;
-    }
     100% {
         mask-position: 100% 0;
     }
 }
 @keyframes ani-mask-front {
     0% {
-        mask-position: 0 0;
-    }
-    60% {
         mask-position: 0 0;
     }
     100% {
@@ -152,9 +148,6 @@
 }
 @keyframes ani-mask-right {
     0% {
-        mask-position: 0 0;
-    }
-    50% {
         mask-position: 0 0;
     }
     100% {

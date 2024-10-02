@@ -1,7 +1,7 @@
 
-const NavText = ({ text, link, active }) => {
+const NavText = ({ text, link, active, textclass }) => {
     return (
-        <a className="nav-text" href={ link }>
+        <a className={`nav-text ${ textclass }`} href={ link }>
             <p>{ text }</p>
             <div className="link-bgr-wrap">
                 <div className="link-bg"/>

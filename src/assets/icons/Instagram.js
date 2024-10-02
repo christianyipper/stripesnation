@@ -1,6 +1,6 @@
-const Instagram = () => {
+const Instagram = ({ iconclass }) => {
     return (
-        <svg className="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+        <svg className={`icon ${iconclass}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
             <g id="Outline">
                 <g id="Instagram">
                 <path class="icon-border" d="M9.04,5.92L0,42.08h38.96L48,5.92H9.04ZM37.46,40.27H2.4L10.54,7.73h35.06l-8.14,32.54Z"/>

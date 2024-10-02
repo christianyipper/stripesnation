@@ -14,7 +14,7 @@
             }
             .parallax-front {
                 position: absolute;
-                animation: parallax-load-left 3s ease-in-out;
+                animation: parallax-load-left 3.2s ease-in-out;
 
                 // .parallax-gif {
                 //     display: none;
@@ -22,7 +22,7 @@
             }
             .img-bg {
                 z-index: -2;
-                animation: parallax-load-right 3s ease-in-out;
+                animation: parallax-load-right 3.2s ease-in-out;
     
                 .img-overlay {
                     display: none;

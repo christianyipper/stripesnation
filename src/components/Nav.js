@@ -28,28 +28,31 @@ const Nav = () => {
                 <section className="nav-mid">
                     <NavText
                         text="Gallery"
+                        textclass="gallery"
                         link="/gallery"
                         active="gallery-active"
                     />
                     <NavText
                         text="About"
+                        textclass="about"
                         link="/about"
                         active="about-active"
                     />
                     <NavText
                         text="Connect"
+                        textclass="connect"
                         link="/connect"
                         active="contact-active"
                     />
                 </section>
                 <section className="nav-right">
-                    <a className="icon-link" href="" target="_blank">
+                    <a className="icon-link instagram" href="" target="_blank">
                         <Instagram/>
                     </a>
-                    <a className="icon-link" href="" target="_blank">
+                    <a className="icon-link facebook" href="" target="_blank">
                         <Facebook/>
                     </a>
-                    <a className="icon-link" href="" target="_blank">
+                    <a className="icon-link linkedin" href="" target="_blank">
                         <Linkedin/>
                     </a>
                 </section>

@@ -9,7 +9,8 @@
         left: 0;
         position: absolute;
         overflow: hidden;
-        animation: parallax-load 3s ease-in-out;
+        opacity: 0;
+        animation: ani-opacity 3s 0.5s ease-in-out forwards;
         z-index: -1;
 
         img {
@@ -21,7 +22,8 @@
         }
         .parallax-front {
             position: absolute;
-            animation: parallax-load-left 3s ease-in-out;
+            animation: parallax-load-left 3.2s ease-in-out;
+            // animation: parallax-left 10s ease-in-out infinite alternate;
 
             .parallax-gif {
                 position: absolute;
@@ -30,7 +32,8 @@
         }
         .img-bg {
             z-index: -2;
-            animation: parallax-load-right 3s ease-in-out;
+            animation: parallax-load-right 3.2s ease-in-out;
+            // animation: parallax-right 10s ease-in-out infinite alternate;
 
             .img-overlay {
                 @include overlay( 100%, 125vh );
@@ -49,7 +52,7 @@
         z-index: 1;
         opacity: 0;
         background: radial-gradient(circle, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 70%, rgba(0,0,0,0) 100%);
-        animation: ani-opacity 1s 2s ease-in-out forwards;
+        animation: ani-opacity 1.2s 2s ease-in-out forwards;
 
         h1 {
             font-size: 40px;
@@ -70,6 +73,7 @@
         }
     }
 }
+// ANIMATION LOAD
 @keyframes parallax-load-left {
     0% {
         transform: translateX( -2% );
@@ -86,6 +90,25 @@
         transform: translateX( 0% );
     }
 }
+
+// ANIMATION LOAD
+@keyframes parallax-left {
+    0% {
+        transform: translateX( -1% );
+    }
+    100% {
+        transform: translateX( 1% );
+    }
+}
+@keyframes parallax-right {
+    0% {
+        transform: translateX( 1% );
+    }
+    100% {
+        transform: translateX( -1% );
+    }
+}
+
 @keyframes parallax-load {
     0% {
         opacity: 0;

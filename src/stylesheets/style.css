@@ -173,6 +173,8 @@ nav .nav-text {
   position: relative;
   padding: 0 10px;
   height: 24px;
+  width: -moz-fit-content;
+  width: fit-content;
   transition: 0.2s ease-in-out;
 }
 nav .nav-text p {
@@ -347,6 +349,7 @@ nav {
   top: 0;
   left: 0;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+  overflow: hidden;
   z-index: 999;
 }
 nav > div {
@@ -380,6 +383,19 @@ nav > div .nav-mid {
   height: 64px;
   gap: 48px;
 }
+nav > div .nav-mid .gallery, nav > div .nav-mid .about, nav > div .nav-mid .connect {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+nav > div .nav-mid .gallery {
+  animation: nav-down 1.5s 1.5s ease-in-out forwards;
+}
+nav > div .nav-mid .about {
+  animation: nav-down 1.5s 1.7s ease-in-out forwards;
+}
+nav > div .nav-mid .connect {
+  animation: nav-down 1.5s 1.9s ease-in-out forwards;
+}
 nav > div .nav-right {
   display: flex;
   flex-wrap: nowrap;
@@ -391,6 +407,19 @@ nav > div .nav-right {
   width: 100%;
   height: 64px;
   gap: 16px;
+}
+nav > div .nav-right .instagram, nav > div .nav-right .facebook, nav > div .nav-right .linkedin {
+  transform: translateY(100%);
+  opacity: 0;
+}
+nav > div .nav-right .instagram {
+  animation: nav-up 1.5s 1.5s ease-in-out forwards;
+}
+nav > div .nav-right .facebook {
+  animation: nav-up 1.5s 1.7s ease-in-out forwards;
+}
+nav > div .nav-right .linkedin {
+  animation: nav-up 1.5s 1.9s ease-in-out forwards;
 }
 nav > div .nav-burger {
   display: none;
@@ -436,6 +465,11 @@ nav > div .nav-burger {
     height: 64px;
     gap: 32px;
   }
+  nav > div .nav-mid .gallery, nav > div .nav-mid .about, nav > div .nav-mid .connect {
+    transform: translateY(0%);
+    opacity: 100%;
+    animation: none;
+  }
   nav > div .nav-right {
     display: flex;
     flex-wrap: nowrap;
@@ -446,6 +480,11 @@ nav > div .nav-burger {
     height: 64px;
     margin-top: 32px;
     gap: 16px;
+  }
+  nav > div .nav-right .instagram, nav > div .nav-right .facebook, nav > div .nav-right .linkedin {
+    transform: translateY(0%);
+    opacity: 100%;
+    animation: none;
   }
   nav > div .nav-burger {
     display: flex;
@@ -476,6 +515,32 @@ nav > div .nav-burger {
     height: 100vh;
     -webkit-backdrop-filter: blur(8px);
             backdrop-filter: blur(8px);
+  }
+}
+@keyframes nav-down {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
+}
+@keyframes nav-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 100%;
   }
 }
 footer {
@@ -642,7 +707,8 @@ footer .footer-bot p {
   left: 0;
   position: absolute;
   overflow: hidden;
-  animation: parallax-load 3s ease-in-out;
+  opacity: 0;
+  animation: ani-opacity 3s 0.5s ease-in-out forwards;
   z-index: -1;
 }
 .home .img-wrap img {
@@ -654,7 +720,7 @@ footer .footer-bot p {
 }
 .home .img-wrap .parallax-front {
   position: absolute;
-  animation: parallax-load-left 3s ease-in-out;
+  animation: parallax-load-left 3.2s ease-in-out;
 }
 .home .img-wrap .parallax-front .parallax-gif {
   position: absolute;
@@ -662,7 +728,7 @@ footer .footer-bot p {
 }
 .home .img-wrap .img-bg {
   z-index: -2;
-  animation: parallax-load-right 3s ease-in-out;
+  animation: parallax-load-right 3.2s ease-in-out;
 }
 .home .img-wrap .img-bg .img-overlay {
   max-width: 100%;
@@ -686,7 +752,7 @@ footer .footer-bot p {
   z-index: 1;
   opacity: 0;
   background: radial-gradient(circle, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0) 100%);
-  animation: ani-opacity 1s 2s ease-in-out forwards;
+  animation: ani-opacity 1.2s 2s ease-in-out forwards;
 }
 .home article h1 {
   font-size: 40px;
@@ -725,6 +791,22 @@ footer .footer-bot p {
     transform: translateX(0%);
   }
 }
+@keyframes parallax-left {
+  0% {
+    transform: translateX(-1%);
+  }
+  100% {
+    transform: translateX(1%);
+  }
+}
+@keyframes parallax-right {
+  0% {
+    transform: translateX(1%);
+  }
+  100% {
+    transform: translateX(-1%);
+  }
+}
 @keyframes parallax-load {
   0% {
     opacity: 0;
@@ -754,11 +836,11 @@ footer .footer-bot p {
   }
   .home .img-wrap .parallax-front {
     position: absolute;
-    animation: parallax-load-left 3s ease-in-out;
+    animation: parallax-load-left 3.2s ease-in-out;
   }
   .home .img-wrap .img-bg {
     z-index: -2;
-    animation: parallax-load-right 3s ease-in-out;
+    animation: parallax-load-right 3.2s ease-in-out;
   }
   .home .img-wrap .img-bg .img-overlay {
     display: none;
@@ -1124,20 +1206,24 @@ footer .footer-bot p {
   position: absolute;
 }
 .contact .img-wrap .img-front {
-  animation: ani-mask-front 2.7s steps(32) forwards;
+  animation: ani-mask-front 1s 1.5s steps(32) forwards;
   z-index: -2;
   -webkit-mask: url("../assets/img/inkmask-inv.png");
           mask: url("../assets/img/inkmask-inv.png");
   -webkit-mask-size: 3300% 100%;
           mask-size: 3300% 100%;
+  -webkit-mask-position: 0 0;
+          mask-position: 0 0;
 }
 .contact .img-wrap .img-back {
-  animation: ani-mask-right 2s steps(32) forwards;
+  animation: ani-mask-right 1s 0.75s steps(32) forwards;
   z-index: -3;
   -webkit-mask: url("../assets/img/inkmask-right.png");
           mask: url("../assets/img/inkmask-right.png");
   -webkit-mask-size: 100% 3300%;
           mask-size: 100% 3300%;
+  -webkit-mask-position: 0 0;
+          mask-position: 0 0;
   opacity: 50%;
 }
 .contact .img-wrap .img-overlay {
@@ -1234,10 +1320,6 @@ footer .footer-bot p {
     -webkit-mask-position: 0 0;
             mask-position: 0 0;
   }
-  33% {
-    -webkit-mask-position: 0 0;
-            mask-position: 0 0;
-  }
   100% {
     -webkit-mask-position: 100% 0;
             mask-position: 100% 0;
@@ -1245,10 +1327,6 @@ footer .footer-bot p {
 }
 @keyframes ani-mask-front {
   0% {
-    -webkit-mask-position: 0 0;
-            mask-position: 0 0;
-  }
-  60% {
     -webkit-mask-position: 0 0;
             mask-position: 0 0;
   }
@@ -1273,10 +1351,6 @@ footer .footer-bot p {
 }
 @keyframes ani-mask-right {
   0% {
-    -webkit-mask-position: 0 0;
-            mask-position: 0 0;
-  }
-  50% {
     -webkit-mask-position: 0 0;
             mask-position: 0 0;
   }
