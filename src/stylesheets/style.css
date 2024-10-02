@@ -1288,7 +1288,7 @@ footer .footer-bot p {
   opacity: 0;
 }
 .contact .content > div article:nth-child(1) .button {
-  animation: contact-fade 4.2s ease-in-out;
+  animation: contact-fade 4.2s ease-in-out forwards;
 }
 .contact .content > div article:nth-child(1) .button > p {
   animation: contact-fade 4.2s ease-in-out;
@@ -1297,7 +1297,7 @@ footer .footer-bot p {
   animation: ani-opacity 1s 2.8s ease-in-out forwards;
 }
 .contact .content > div article:nth-child(2) .button {
-  animation: contact-fade 4s ease-in-out;
+  animation: contact-fade 4s ease-in-out forwards;
 }
 .contact .content > div article:nth-child(2) .button > p {
   animation: contact-fade 4s ease-in-out;
@@ -1306,7 +1306,7 @@ footer .footer-bot p {
   animation: ani-opacity 1s 2.6s ease-in-out forwards;
 }
 .contact .content > div article:nth-child(3) .button {
-  animation: contact-fade 4.4s ease-in-out;
+  animation: contact-fade 4.4s ease-in-out forwards;
 }
 .contact .content > div article:nth-child(3) .button > p {
   animation: contact-fade 4.4s ease-in-out;
@@ -1453,14 +1453,14 @@ footer .footer-bot p {
     justify-content: end;
     align-items: center;
     position: relative;
-    margin-top: 96px;
+    margin-top: 80px;
     width: 100%;
   }
   .contact .content > article h1 {
     opacity: 0;
     margin: 0;
     margin-bottom: 8px;
-    font-size: 38px;
+    font-size: 42px;
     animation: contact-scale 2s 1.5s ease-in-out forwards;
   }
   .contact .content > article > div {
@@ -1477,7 +1477,8 @@ footer .footer-bot p {
   .contact .content > article > div hr {
     width: 8px;
     height: 4px;
-    background: white;
+    background: rgba(255, 255, 255, 0.5);
+    border-color: transparent;
     border-radius: 8px;
   }
   .contact .content > article > div p {
@@ -1485,6 +1486,7 @@ footer .footer-bot p {
     width: -moz-fit-content;
     width: fit-content;
     text-align: center;
+    color: rgba(255, 255, 255, 0.5);
     line-height: 1.2;
     font-weight: 500;
   }
@@ -1509,7 +1511,7 @@ footer .footer-bot p {
     opacity: 0;
   }
   .contact .content > div article:nth-child(1) .button {
-    animation: contact-fade 4s ease-in-out;
+    animation: contact-fade 4s ease-in-out forwards;
   }
   .contact .content > div article:nth-child(1) .button > p {
     animation: contact-fade 4s ease-in-out;
@@ -1518,7 +1520,7 @@ footer .footer-bot p {
     animation: ani-opacity 1s 2.6s ease-in-out forwards;
   }
   .contact .content > div article:nth-child(2) .button {
-    animation: contact-fade 4.2s ease-in-out;
+    animation: contact-fade 4.2s ease-in-out forwards;
   }
   .contact .content > div article:nth-child(2) .button > p {
     animation: contact-fade 4.2s ease-in-out;
@@ -1527,7 +1529,7 @@ footer .footer-bot p {
     animation: ani-opacity 1s 2.8s ease-in-out forwards;
   }
   .contact .content > div article:nth-child(3) .button {
-    animation: contact-fade 4.4s ease-in-out;
+    animation: contact-fade 4.4s ease-in-out forwards;
   }
   .contact .content > div article:nth-child(3) .button > p {
     animation: contact-fade 4.4s ease-in-out;

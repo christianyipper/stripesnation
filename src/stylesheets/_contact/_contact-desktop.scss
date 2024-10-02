@@ -82,7 +82,7 @@
             }
             article:nth-child(1) {
                 .button {
-                    animation: contact-fade 4.2s ease-in-out;
+                    animation: contact-fade 4.2s ease-in-out forwards;
 
                     > p {
                         animation: contact-fade 4.2s ease-in-out;
@@ -94,7 +94,7 @@
             }
             article:nth-child(2) {
                 .button {
-                    animation: contact-fade 4s ease-in-out;
+                    animation: contact-fade 4s ease-in-out forwards;
 
                     > p {
                         animation: contact-fade 4s ease-in-out;
@@ -106,7 +106,7 @@
             }
             article:nth-child(3) {
                 .button {
-                    animation: contact-fade 4.4s ease-in-out;
+                    animation: contact-fade 4.4s ease-in-out forwards;
 
                     > p {
                         animation: contact-fade 4.4s ease-in-out;

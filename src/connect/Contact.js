@@ -25,7 +25,7 @@ const Contact = () => {
                     <article>
                         <Button
                             text="www.yipper.ca"
-                            variant="tertiary"
+                            variant="secondary"
                             link="https://www.yipper.ca"
                             target="_blank"
                         />
@@ -34,7 +34,7 @@ const Contact = () => {
                     <article>
                         <Button
                             text="christian@yipper.ca"
-                            variant="tertiary"
+                            variant="secondary"
                             link="christian@yipper.ca"
                             target="_blank"
                         />
@@ -43,7 +43,7 @@ const Contact = () => {
                     <article>
                         <Button
                             text="in/christianyipper"
-                            variant="tertiary"
+                            variant="secondary"
                             link="https://www.linkedin.com/in/christianyipper/"
                             target="_blank"
                         />
