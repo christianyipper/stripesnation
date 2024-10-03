@@ -22,18 +22,16 @@
         }
         .parallax-front {
             position: absolute;
-            animation: parallax-load-left 3.2s ease-in-out;
-            // animation: parallax-left 10s ease-in-out infinite alternate;
+            animation: parallax-front 3.2s ease-out;
 
             .parallax-gif {
                 position: absolute;
                 z-index: 2;
             }
         }
-        .img-bg {
+        .parallax-back {
             z-index: -2;
-            animation: parallax-load-right 3.2s ease-in-out;
-            // animation: parallax-right 10s ease-in-out infinite alternate;
+            animation: parallax-back 3.2s ease-out;
 
             .img-overlay {
                 @include overlay( 100%, 125vh );
@@ -74,38 +72,20 @@
     }
 }
 // ANIMATION LOAD
-@keyframes parallax-load-left {
+@keyframes parallax-front {
     0% {
-        transform: translateX( -2% );
+        transform: translateX( -3.5% );
     }
     100% {
         transform: translateX( 0% );
     }
 }
-@keyframes parallax-load-right {
+@keyframes parallax-back {
     0% {
-        transform: translateX( 2% );
+        transform: translateX( 3.5% );
     }
     100% {
         transform: translateX( 0% );
-    }
-}
-
-// ANIMATION LOAD
-@keyframes parallax-left {
-    0% {
-        transform: translateX( -1% );
-    }
-    100% {
-        transform: translateX( 1% );
-    }
-}
-@keyframes parallax-right {
-    0% {
-        transform: translateX( 1% );
-    }
-    100% {
-        transform: translateX( -1% );
     }
 }
 

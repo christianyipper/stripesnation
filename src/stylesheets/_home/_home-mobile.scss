@@ -12,21 +12,8 @@
                 max-height: 100vh;
                 max-width: none;
             }
-            .parallax-front {
-                position: absolute;
-                animation: parallax-load-left 3.2s ease-in-out;
-
-                // .parallax-gif {
-                //     display: none;
-                // }
-            }
-            .img-bg {
-                z-index: -2;
-                animation: parallax-load-right 3.2s ease-in-out;
-    
-                .img-overlay {
-                    display: none;
-                }
+            .img-overlay {
+                display: none;
             }
             .mobile-img-overlay {
                 display: flex;
@@ -72,22 +59,6 @@
                 width: 100%;
                 gap: 16px;
             }
-        }
-    }
-    @keyframes parallax-load-left {
-        0% {
-            transform: translateX( -3% );
-        }
-        100% {
-            transform: translateX( 0% );
-        }
-    }
-    @keyframes parallax-load-right {
-        0% {
-            transform: translateX( 3% );
-        }
-        100% {
-            transform: translateX( 0% );
         }
     }
 }

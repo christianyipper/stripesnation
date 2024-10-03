@@ -19,6 +19,9 @@
                 max-width: none;
                 aspect-ratio: 3 / 2;
             }
+            .img-back {
+                opacity: 70%;
+            }
             .img-overlay {
                 display: flex;
                 background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 25%, rgba(0,0,0,0) 100%);

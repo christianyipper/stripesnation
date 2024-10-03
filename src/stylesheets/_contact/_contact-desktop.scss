@@ -82,7 +82,7 @@
             }
             article:nth-child(1) {
                 .button {
-                    animation: contact-fade 4.2s ease-in-out forwards;
+                    animation: contact-fade 4.2s ease-in-out;
 
                     > p {
                         animation: contact-fade 4.2s ease-in-out;
@@ -94,7 +94,7 @@
             }
             article:nth-child(2) {
                 .button {
-                    animation: contact-fade 4s ease-in-out forwards;
+                    animation: contact-fade 4s ease-in-out;
 
                     > p {
                         animation: contact-fade 4s ease-in-out;
@@ -106,7 +106,7 @@
             }
             article:nth-child(3) {
                 .button {
-                    animation: contact-fade 4.4s ease-in-out forwards;
+                    animation: contact-fade 4.4s ease-in-out;
 
                     > p {
                         animation: contact-fade 4.4s ease-in-out;
@@ -119,31 +119,13 @@
         }
     }
 }
-@keyframes ani-mask-back {
-    0% {
-        mask-position: 0 0;
-    }
-    100% {
-        mask-position: 100% 0;
-    }
-}
+
 @keyframes ani-mask-front {
     0% {
         mask-position: 0 0;
     }
     100% {
         mask-position: 100% 0;
-    }
-}
-@keyframes ani-mask-left {
-    0% {
-        mask-position: 0 100%;
-    }
-    66% {
-        mask-position: 0 100%;
-    }
-    100% {
-        mask-position: 0 0;
     }
 }
 @keyframes ani-mask-right {
@@ -165,6 +147,7 @@
         opacity: 100%;
     }
 }
+
 @keyframes contact-scale {
     0% {
         opacity: 0;

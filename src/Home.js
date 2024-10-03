@@ -14,9 +14,9 @@ const Home = () => {
                     </video> */}
                     <img className="parallax-static" src={ HomeParallax } alt="" />
                 </div>
-                <div className="img-bg">
+                <div className="parallax-back">
                     <div className="img-overlay"/>
-                    <img className="parallax-back" src={ HomeParallaxBg } alt="" />
+                    <img className="img-back" src={ HomeParallaxBg } alt="" />
                 </div>
                 <div className="mobile-img-overlay"/>
             </section>
