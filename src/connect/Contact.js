@@ -7,8 +7,8 @@ const Contact = () => {
         <div className='contact'>
             <section className="img-wrap">
                     <div className="img-overlay"/>
-                    <img className="img-front" src={ Wallpaper } alt=""/>
-                    <img className="img-back" src={ WallpaperHalf } alt=""/>
+                    <img className="img-front" src={ Wallpaper } alt="Collage of Christian Yip looking in the distance, officiating a hockey game, and holding a dslr camera"/>
+                    <img className="img-back" src={ WallpaperHalf } alt="Collage of Christian Yip looking in the distance, officiating a hockey game, and holding a dslr camera"/>
             </section>
             <section className="content">
                 <article>

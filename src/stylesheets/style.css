@@ -40,7 +40,7 @@ main {
 }
 @font-face {
   font-family: "StripesNation";
-  src: url("../assets/fonts/StripesNationFont.ttf");
+  src: url("../assets/fonts/StripesNation.ttf");
   font-weight: normal;
   font-style: normal;
 }
@@ -196,8 +196,8 @@ nav .nav-text .link-bgr-wrap, nav .nav-text .link-bgl-wrap {
   height: 16px;
 }
 nav .nav-text .link-bgr-wrap {
-  top: 1px;
-  right: 0;
+  top: 0px;
+  right: -1px;
 }
 nav .nav-text .link-bgr-wrap > div {
   top: 0;
@@ -1051,11 +1051,22 @@ footer .footer-bot p {
   animation: ani-opacity 2s 0.9s ease-in-out forwards;
 }
 .about .about-content .about-photo {
-  background-color: green;
+  position: relative;
   border-radius: 8px;
   aspect-ratio: 3/2;
   grid-row: 1;
   opacity: 0;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+}
+.about .about-content .about-photo img {
+  position: absolute;
+  margin-top: 0;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .about .about-content .a1 {
   grid-column: 8/12;
