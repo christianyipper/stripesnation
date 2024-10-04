@@ -1,3 +1,5 @@
+import { Helmet } from "react-helmet";
+
 import SNice from '../assets/img/stripesnation-icebg.jpg';
 import OurStoryLogo from '../assets/img/StripesNation-OurStory.png';
 import Bumper from '../assets/img/StripesNation-long.mp4';
@@ -7,16 +9,26 @@ import RefereePhoto from '../assets/img/referee-photoshoot.jpg';
 import YipperPhoto from '../assets/img/profile-img.jpg';
 
 const About = () => {
+    
     return (
         <div id="about" className="about">
+            <Helmet>
+                <title>Stripes Nation | About | Referee & Sports Photography</title>
+                <meta property="og:title" content="Stripes Nation | About | Referee & Sports Photography"/>
+
+                <meta name="og:description" content="Our mission is to provide a platform devoted to showcasing the passion and dedication of on-ice officials, fostering a positive and inclusive community within the hockey world."/>
+
+                <meta name="keywords" content="referee photography, sports photography, hockey referees, hockey linespeople, on-ice officials, hockey officiating, hockey community, officiating community, referee brand, photography for amateur hockey referees and linespeople, inclusive photography platform, hockey referees media, Christian Yip, hockey officials, visual storytelling for on-ice officials, ice hockey, sports media, minor hockey referees and linespeople, minor hockey officials, amateur hockey referees and linespeople, amateur hockey officials, about Stripes Nation, about hockey referees, about on-ice officiating"/>
+
+                <meta property="og:url" content="https://stripesnation.com/about"/>
+            </Helmet>
+
             {/* <section className="img-wrap">
                 <div className="img-overlay"/>
                 <img src={ SNice } alt=""/>
             </section> */}
             <img src={ OurStoryLogo } alt="" />
-            {/* <video loop autoPlay muted>
-                <source src={ Bumper } type="video/mp4"/>
-            </video> */}
+            <h1>Our Story</h1>
             <section className="about-content">
                 <article className="content-1">
                     <h2>The<span> </span>Beginning</h2>

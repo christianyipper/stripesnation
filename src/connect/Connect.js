@@ -1,10 +1,22 @@
+import { Helmet } from "react-helmet";
+
 import Wallpaper from "../assets/img/yipper-wallpaper.jpg";
 import WallpaperHalf from "../assets/img/yipper-wallpaper-half.jpg";
 import Button from "../components/Button";
 
 const Contact = () => {
     return (
-        <div className='contact'>
+        <div id="connect" className="contact">
+            <Helmet>
+                <title>Stripes Nation | Connect | Referee & Sports Photography</title>
+                <meta property="og:title" content="Stripes Nation | Connect | Referee & Sports Photography"/>
+
+                <meta name="og:description" content="Stripes Nation was founded by fellow hockey official Christian Yip. Connect with him to follow his web development and graphics design projects."/>
+
+                <meta name="keywords" content="referee photography, sports photography, hockey referees, hockey linespeople, on-ice officials, hockey officiating, hockey community, officiating community, referee brand, photography for amateur hockey referees and linespeople, inclusive photography platform, hockey referees media, Christian Yip, hockey officials, visual storytelling for on-ice officials, ice hockey, sports media, minor hockey referees and linespeople, minor hockey officials, amateur hockey referees and linespeople, amateur hockey officials, connect with us"/>
+
+                <meta property="og:url" content="https://stripesnation.com/connect"/>
+            </Helmet>
             <section className="img-wrap">
                     <div className="img-overlay"/>
                     <img className="img-front" src={ Wallpaper } alt="Collage of Christian Yip looking in the distance, officiating a hockey game, and holding a dslr camera"/>

@@ -2,6 +2,9 @@
     @include flex-wrap( nowrap, column, center, center );
     width: 100%;
 
+    h1 {
+        display: none;
+    }
     img {
         height: 128px;
         margin-top: 128px;

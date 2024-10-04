@@ -999,6 +999,9 @@ footer .footer-bot p {
   align-items: center;
   width: 100%;
 }
+.about h1 {
+  display: none;
+}
 .about img {
   height: 128px;
   margin-top: 128px;

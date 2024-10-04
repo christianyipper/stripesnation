@@ -1,11 +1,11 @@
-import HomeParallaxBg from "./assets/img/sn-parallax-bg.jpg"
-import HomeParallaxGif from "./assets/img/jersey-animate-1440.gif"
-import HomeParallax from "./assets/img/sn-parallax-official.png"
-import Button from "./components/Button"
+import HomeParallaxBg from "./assets/img/sn-parallax-bg.jpg";
+import HomeParallaxGif from "./assets/img/jersey-animate-1440.gif";
+import HomeParallax from "./assets/img/sn-parallax-official.png";
+import Button from "./components/Button";
 
 const Home = () => {
     return (
-        <div id="about" className="home">
+        <div id="home" className="home">
             <section className="img-wrap">
                 <div className="parallax-front">
                     <img className="parallax-gif" src={ HomeParallaxGif } alt="Animated image of a referee jersey waving in the wind" />
