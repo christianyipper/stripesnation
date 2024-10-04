@@ -5,7 +5,7 @@ import Button from "./components/Button"
 
 const Home = () => {
     return (
-        <div className='home'>
+        <div id="about" className="home">
             <section className="img-wrap">
                 <div className="parallax-front">
                     <img className="parallax-gif" src={ HomeParallaxGif } alt="" />

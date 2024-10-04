@@ -4,7 +4,7 @@ import Bumper from '../assets/img/StripesNation-long.mp4';
 
 const About = () => {
     return (
-        <div className='about'>
+        <div id="about" className="about">
             {/* <section className="img-wrap">
                 <div className="img-overlay"/>
                 <img src={ SNice } alt=""/>
