@@ -16,6 +16,7 @@ const About = () => {
                 <title>Stripes Nation | About | Referee & Sports Photography</title>
                 <meta property="og:title" content="Stripes Nation | About | Referee & Sports Photography"/>
 
+                <meta name="description" content="Our mission is to provide a platform devoted to showcasing the passion and dedication of on-ice officials, fostering a positive and inclusive community within the hockey world."/>
                 <meta name="og:description" content="Our mission is to provide a platform devoted to showcasing the passion and dedication of on-ice officials, fostering a positive and inclusive community within the hockey world."/>
 
                 <meta name="keywords" content="referee photography, sports photography, hockey referees, hockey linespeople, on-ice officials, hockey officiating, hockey community, officiating community, referee brand, photography for amateur hockey referees and linespeople, inclusive photography platform, hockey referees media, Christian Yip, hockey officials, visual storytelling for on-ice officials, ice hockey, sports media, minor hockey referees and linespeople, minor hockey officials, amateur hockey referees and linespeople, amateur hockey officials, about Stripes Nation, about hockey referees, about on-ice officiating"/>

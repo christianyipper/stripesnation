@@ -2,10 +2,22 @@ import HomeParallaxBg from "./assets/img/sn-parallax-bg.jpg";
 import HomeParallaxGif from "./assets/img/jersey-animate-1440.gif";
 import HomeParallax from "./assets/img/sn-parallax-official.png";
 import Button from "./components/Button";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
     return (
         <div id="home" className="home">
+            <Helmet>
+                <title>Stripes Nation | Home | Referee & Sports Photography</title>
+                <meta property="og:title" content="Stripes Nation | Home | Referee & Sports Photography"/>
+
+                <meta name="description" content="Stripes Nation is a referee & sports photography brand devoted to showcasing the passion and dedication of hockey officials."/>
+                <meta name="og:description" content="Stripes Nation is a referee & sports photography brand devoted to showcasing the passion and dedication of hockey officials."/>
+
+                <meta name="keywords" content="referee photography, sports photography, hockey referees, hockey linespeople, on-ice officials, hockey officiating, hockey community, officiating community, referee brand, photography for amateur hockey referees and linespeople, inclusive photography platform, hockey referees media, Christian Yip, hockey officials, visual storytelling for on-ice officials, ice hockey, sports media, minor hockey referees and linespeople, minor hockey officials, amateur hockey referees and linespeople, amateur hockey officials"/>
+
+                <meta property="og:url" content="https://stripesnation.com"/>
+            </Helmet>
             <section className="img-wrap">
                 <div className="parallax-front">
                     <img className="parallax-gif" src={ HomeParallaxGif } alt="Animated image of a referee jersey waving in the wind" />
