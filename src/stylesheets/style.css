@@ -938,31 +938,26 @@ footer .footer-bot p {
   grid-column: 1/7;
   grid-row: 1/3;
   aspect-ratio: 1/1;
-  background-image: url("../assets/img/gallery-photos/WaterproofBoots_Yellow_Detail_520x.png");
 }
 .gallery .grid-mid .b2 {
   grid-column: 7/10;
   grid-row: 1/2;
   aspect-ratio: 1/1;
-  background-image: url("../assets/img/gallery-photos/WaterproofBoots_Yellow_Detail_520x.png");
 }
 .gallery .grid-mid .b3 {
   grid-column: 10/13;
   grid-row: 1/2;
   aspect-ratio: 1/1;
-  background-image: url("../assets/img/gallery-photos/WaterproofBoots_Yellow_Detail_520x.png");
 }
 .gallery .grid-mid .b4 {
   grid-column: 7/10;
   grid-row: 2/3;
   aspect-ratio: 1/1;
-  background-image: url("../assets/img/gallery-photos/WaterproofBoots_Yellow_Detail_520x.png");
 }
 .gallery .grid-mid .b5 {
   grid-column: 10/13;
   grid-row: 2/3;
   aspect-ratio: 1/1;
-  background-image: url("../assets/img/gallery-photos/WaterproofBoots_Yellow_Detail_520x.png");
 }
 .gallery .grid-bot {
   grid-template-rows: repeat(3, 0.5fr);
@@ -1182,8 +1177,8 @@ footer .footer-bot p {
 .contact .img-wrap .img-front {
   animation: ani-mask-front 1s 1.5s steps(32) forwards;
   z-index: -2;
-  -webkit-mask: url("../assets/img/inkmask-inv.png");
-          mask: url("../assets/img/inkmask-inv.png");
+  -webkit-mask: url("../assets/img/masks/inkmask-inv.png");
+          mask: url("../assets/img/masks/inkmask-inv.png");
   -webkit-mask-size: 3300% 100%;
           mask-size: 3300% 100%;
   -webkit-mask-position: 0 0;
@@ -1192,8 +1187,8 @@ footer .footer-bot p {
 .contact .img-wrap .img-back {
   animation: ani-mask-right 1s 0.75s steps(32) forwards;
   z-index: -3;
-  -webkit-mask: url("../assets/img/inkmask-right.png");
-          mask: url("../assets/img/inkmask-right.png");
+  -webkit-mask: url("../assets/img/masks/inkmask-right.png");
+          mask: url("../assets/img/masks/inkmask-right.png");
   -webkit-mask-size: 100% 3300%;
           mask-size: 100% 3300%;
   -webkit-mask-position: 0 0;
@@ -1240,6 +1235,10 @@ footer .footer-bot p {
   opacity: 0;
   animation: contact-scale 2s 1.7s ease-in-out forwards;
 }
+.contact .content > article > div h2 {
+  font-family: "Poppins";
+  font-size: 18px;
+}
 .contact .content > article > div hr {
   width: 4px;
   height: 4px;
@@ -1256,6 +1255,7 @@ footer .footer-bot p {
   margin-top: 48px;
 }
 .contact .content > div .description {
+  font-family: "Poppins";
   font-size: 14px;
   margin-top: 4px;
   color: rgba(220, 220, 220, 0.6);
@@ -1434,7 +1434,7 @@ footer .footer-bot p {
     border-color: transparent;
     border-radius: 8px;
   }
-  .contact .content > article > div p {
+  .contact .content > article > div h2 {
     font-size: 14px;
     width: -moz-fit-content;
     width: fit-content;

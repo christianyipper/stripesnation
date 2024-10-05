@@ -1,6 +1,6 @@
-import HomeParallaxBg from "./assets/img/sn-parallax-bg.jpg";
-import HomeParallaxGif from "./assets/img/jersey-animate-1440.gif";
-import HomeParallax from "./assets/img/sn-parallax-official.png";
+import HomeParallaxBg from "./assets/img/home-img/parallax-back.jpg";
+import HomeParallaxGif from "./assets/img/home-img/parallax-animate.gif";
+import HomeParallax from "./assets/img/home-img/parallax-front.png";
 import Button from "./components/Button";
 import { Helmet } from "react-helmet";
 
@@ -8,8 +8,8 @@ const Home = () => {
     return (
         <div id="home" className="home">
             <Helmet>
-                <title>Stripes Nation | Home | Referee & Sports Photography</title>
-                <meta property="og:title" content="Stripes Nation | Home | Referee & Sports Photography"/>
+                <title>Stripes Nation | Referee & Sports Photography</title>
+                <meta property="og:title" content="Stripes Nation | Referee & Sports Photography"/>
 
                 <meta name="description" content="Stripes Nation is a referee & sports photography brand devoted to showcasing the passion and dedication of hockey officials."/>
                 <meta name="og:description" content="Stripes Nation is a referee & sports photography brand devoted to showcasing the passion and dedication of hockey officials."/>
@@ -21,13 +21,10 @@ const Home = () => {
             <section className="img-wrap">
                 <div className="parallax-front">
                     <img className="parallax-gif" src={ HomeParallaxGif } alt="Animated image of a referee jersey waving in the wind" />
-                    {/* <video className="parallax-mov" loop autoPlay muted>
-                        <source src={ HomeParallaxMov } type="video/mov"/>
-                    </video> */}
                     <img className="parallax-static" src={ HomeParallax } alt="Image of a referee bearing the Stripes Nation logo on the ice during the game" />
                 </div>
                 <div className="parallax-back">
-                    <div className="img-overlay"/>
+                    {/* <div className="img-overlay"/> */}
                     <img className="img-back" src={ HomeParallaxBg } alt="Image of a hockey game in the background" />
                 </div>
                 <div className="mobile-img-overlay"/>

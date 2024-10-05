@@ -1,20 +1,17 @@
 import { Helmet } from "react-helmet";
 
-import SNice from '../assets/img/stripesnation-icebg.jpg';
-import OurStoryLogo from '../assets/img/StripesNation-OurStory.png';
-import Bumper from '../assets/img/StripesNation-long.mp4';
-
-import PaperLogo from '../assets/img/about-paper-draft.jpg';
-import RefereePhoto from '../assets/img/referee-photoshoot.jpg';
-import YipperPhoto from '../assets/img/profile-img.jpg';
+import OurStoryLogo from '../assets/img/about-img/StripesNation-OurStory.png';
+import PaperLogo from '../assets/img/about-img/logo-draft.jpg';
+import RefereePhoto from '../assets/img/about-img/referee-photoshoot.jpg';
+import YipperPhoto from '../assets/img/about-img/profile-img.jpg';
 
 const About = () => {
     
     return (
         <div id="about" className="about">
             <Helmet>
-                <title>Stripes Nation | About | Referee & Sports Photography</title>
-                <meta property="og:title" content="Stripes Nation | About | Referee & Sports Photography"/>
+                <title>About | Stripes Nation | Referee & Sports Photography</title>
+                <meta property="og:title" content="About | Stripes Nation | Referee & Sports Photography"/>
 
                 <meta name="description" content="Our mission is to provide a platform devoted to showcasing the passion and dedication of on-ice officials, fostering a positive and inclusive community within the hockey world."/>
                 <meta name="og:description" content="Our mission is to provide a platform devoted to showcasing the passion and dedication of on-ice officials, fostering a positive and inclusive community within the hockey world."/>

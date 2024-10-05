@@ -4,8 +4,8 @@ const Gallery = () => {
     return (
         <div id="gallery" className="gallery">
             <Helmet>
-                <title>Stripes Nation | Gallery | Referee & Sports Photography</title>
-                <meta property="og:title" content="Stripes Nation | Gallery | Referee & Sports Photography"/>
+                <title>Gallery | Stripes Nation | Referee & Sports Photography</title>
+                <meta property="og:title" content="Gallery | Stripes Nation | Referee & Sports Photography"/>
 
                 <meta name="description" content="Our mission is to provide a platform devoted to showcasing the passion and dedication of on-ice officials, fostering a positive and inclusive community within the hockey world."/>
                 <meta name="og:description" content="Our mission is to provide a platform devoted to showcasing the passion and dedication of on-ice officials, fostering a positive and inclusive community within the hockey world."/>
