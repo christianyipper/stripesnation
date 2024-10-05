@@ -14,7 +14,7 @@ const Home = () => {
                 <meta name="description" content="Stripes Nation is a referee & sports photography brand devoted to showcasing the passion and dedication of hockey officials."/>
                 <meta name="og:description" content="Stripes Nation is a referee & sports photography brand devoted to showcasing the passion and dedication of hockey officials."/>
 
-                <meta name="keywords" content="referee photography, sports photography, hockey referees, hockey linespeople, on-ice officials, hockey officiating, hockey community, officiating community, referee brand, photography for amateur hockey referees and linespeople, inclusive photography platform, hockey referees media, Christian Yip, hockey officials, visual storytelling for on-ice officials, ice hockey, sports media, minor hockey referees and linespeople, minor hockey officials, amateur hockey referees and linespeople, amateur hockey officials"/>
+                <meta name="keywords" content="referee photography, sports photography, hockey referees, hockey linespeople, on-ice officials, hockey officiating, hockey community, officiating community, referee brand, photography for amateur hockey referees and linespeople, inclusive photography platform, hockey referees media, Christian Yip, hockey officials, visual storytelling for on-ice officials, ice hockey, sports media, minor hockey referees and linespeople, minor hockey officials, amateur hockey referees and linespeople, amateur hockey officials, explore new perspectives"/>
 
                 <meta property="og:url" content="https://stripesnation.com"/>
             </Helmet>
