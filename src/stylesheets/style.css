@@ -720,7 +720,7 @@ footer .footer-bot p {
 }
 .home .img-wrap .parallax-front {
   position: absolute;
-  animation: parallax-front 3.2s ease-out;
+  animation: parallax-front 3s 0.5s ease-out;
 }
 .home .img-wrap .parallax-front .parallax-gif {
   position: absolute;
@@ -728,7 +728,7 @@ footer .footer-bot p {
 }
 .home .img-wrap .parallax-back {
   z-index: -2;
-  animation: parallax-back 3.2s ease-out;
+  animation: parallax-back 3s 0.5s ease-out;
 }
 .home .img-wrap .parallax-back .img-overlay {
   max-width: 100%;
@@ -777,7 +777,7 @@ footer .footer-bot p {
 
 @keyframes parallax-front {
   0% {
-    transform: translateX(-3.5%);
+    transform: translateX(-3%);
   }
   100% {
     transform: translateX(0%);
@@ -785,7 +785,7 @@ footer .footer-bot p {
 }
 @keyframes parallax-back {
   0% {
-    transform: translateX(3.5%);
+    transform: translateX(3%);
   }
   100% {
     transform: translateX(0%);

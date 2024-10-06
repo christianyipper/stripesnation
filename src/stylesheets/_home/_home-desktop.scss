@@ -22,7 +22,7 @@
         }
         .parallax-front {
             position: absolute;
-            animation: parallax-front 3.2s ease-out;
+            animation: parallax-front 3s 0.5s ease-out;
 
             .parallax-gif {
                 position: absolute;
@@ -31,7 +31,7 @@
         }
         .parallax-back {
             z-index: -2;
-            animation: parallax-back 3.2s ease-out;
+            animation: parallax-back 3s 0.5s ease-out;
 
             .img-overlay {
                 @include overlay( 100%, 125vh );
@@ -74,7 +74,7 @@
 // ANIMATION LOAD
 @keyframes parallax-front {
     0% {
-        transform: translateX( -3.5% );
+        transform: translateX( -3% );
     }
     100% {
         transform: translateX( 0% );
@@ -82,7 +82,7 @@
 }
 @keyframes parallax-back {
     0% {
-        transform: translateX( 3.5% );
+        transform: translateX( 3% );
     }
     100% {
         transform: translateX( 0% );
