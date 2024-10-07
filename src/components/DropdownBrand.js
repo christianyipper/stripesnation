@@ -7,9 +7,6 @@ const DropdownBrand = ({
 }) => {
     const dropdownRef = useRef(null);
     const [isActive, setIsActive] = useState(false);
-    const dropdownClick = () => {
-        setIsActive(!isActive);
-    };
 
     useLayoutEffect(() => {
         if (dropdownRef.current) {
@@ -17,6 +14,10 @@ const DropdownBrand = ({
             element.style.setProperty('--max-height', `${element.scrollHeight}px`);
         }
     }, [dropdownRef]);
+
+    const dropdownClick = () => {
+        setIsActive(!isActive);
+    };
 
     return (
         <section className={ isActive ? "" : "drop" } onClick={ dropdownClick } ref={dropdownRef}>
