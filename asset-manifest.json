@@ -1,25 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd9a5fb0.css",
-    "main.js": "/static/js/main.cdbb7afc.js",
+    "main.css": "/static/css/main.5806ff85.css",
+    "main.js": "/static/js/main.95dcafae.js",
     "static/media/parallax-animate.gif": "/static/media/parallax-animate.77b27a884944a1c54214.gif",
     "static/media/logo-draft.jpg": "/static/media/logo-draft.6eff657b814be3fdfd87.jpg",
     "static/media/parallax-front.png": "/static/media/parallax-front.beedc2c4b7079046a5d1.png",
     "static/media/yipper-wallpaper-fade.jpg": "/static/media/yipper-wallpaper-fade.3c2b8aaca23de05b0ba8.jpg",
     "static/media/referee-photoshoot.jpg": "/static/media/referee-photoshoot.bb64bd3832be61f5d482.jpg",
+    "static/media/Values.png": "/static/media/Values.4ea7609868ce89e69a9d.png",
+    "static/media/Colours.png": "/static/media/Colours.b8988f220f24d6206a81.png",
     "static/media/yipper-wallpaper-half.jpg": "/static/media/yipper-wallpaper-half.330c6a1735eef11517da.jpg",
     "static/media/parallax-back.jpg": "/static/media/parallax-back.bad319d493d753e0ec06.jpg",
+    "static/media/Voice.png": "/static/media/Voice.2fb5d980d5fd7ad26271.png",
+    "static/media/Initiative.png": "/static/media/Initiative.834a605c759ab3aa0b5d.png",
+    "static/media/Draft.png": "/static/media/Draft.6782b605924c397f2ee1.png",
     "static/media/StripesNation-OurStory.png": "/static/media/StripesNation-OurStory.6cffe2a6757aada2e62f.png",
     "static/media/profile-img.jpg": "/static/media/profile-img.766fb2b92e85ce4c14b1.jpg",
+    "static/media/Typography.png": "/static/media/Typography.af4949453d7e3156fac6.png",
     "static/media/inkmask-right.png": "/static/media/inkmask-right.3d85368e7a59160d4692.png",
+    "static/media/Logo.png": "/static/media/Logo.d372a95133eec07938b8.png",
+    "static/media/Wordmark.png": "/static/media/Wordmark.0e058358ad1fd7989f5c.png",
     "static/media/inkmask-inv.png": "/static/media/inkmask-inv.262c20e7d210db046e3c.png",
     "static/media/StripesNation.ttf": "/static/media/StripesNation.f96683e315f2472499c7.ttf",
     "index.html": "/index.html",
-    "main.bd9a5fb0.css.map": "/static/css/main.bd9a5fb0.css.map",
-    "main.cdbb7afc.js.map": "/static/js/main.cdbb7afc.js.map"
+    "main.5806ff85.css.map": "/static/css/main.5806ff85.css.map",
+    "main.95dcafae.js.map": "/static/js/main.95dcafae.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd9a5fb0.css",
-    "static/js/main.cdbb7afc.js"
+    "static/css/main.5806ff85.css",
+    "static/js/main.95dcafae.js"
   ]
 }
