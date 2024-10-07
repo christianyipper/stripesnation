@@ -34,11 +34,12 @@ const Branding = () => {
             </Helmet>
             <article>
                 <h1>Brand Guide</h1>
-                <p>Here is a look into the Stripes Nation brand created by Christian Yip. Click on the buttons below to learn more. A full brand book will be available soon.</p>
+                <p>Here's a preview of the Stripes Nation brand created by Christian Yip. Click on the buttons below to learn more. An in-depth brand book is currently in the works. Stay tuned for updates on our social media.</p>
             </article>
             <div className="dropdown-container">
                 <DropdownBrand
                     heading="Logo Design"
+                    text="Draft • Logo • Wordmark"
                     img1={ Draft }
                     img2={ Logo }
                     img3={ Wordmark }
@@ -47,6 +48,7 @@ const Branding = () => {
                 />
                 <DropdownBrand
                     heading="Style Tile"
+                    text="Colour Palette • Typography"
                     img1={ Colour }
                     img2={ Typography }
                     display3="none"
@@ -55,6 +57,7 @@ const Branding = () => {
                 />
                 <DropdownBrand
                     heading="Brand Identity"
+                    text="Values • Initiative • Messaging"
                     img1={ Values }
                     img2={ Initiative }
                     img3={ Voice }

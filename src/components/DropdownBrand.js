@@ -1,7 +1,7 @@
 import { useRef, useState, useEffect, useLayoutEffect } from 'react';
 
 const DropdownBrand = ({ 
-    heading, section,
+    heading, section, text,
     img1, img2, img3, img4, img5,
     alt1, alt2, alt3, alt4, alt5,
     display2, display3, display4, display5
@@ -40,6 +40,7 @@ const DropdownBrand = ({
     return (
         <section className={`${ section } ${ isActive ? "" : "drop" }`} onClick={ dropdownClick } ref={dropdownRef}>
                 <h2>{ heading }</h2>
+                <p>{ text }</p>
                 <img src={ img1 } alt={ alt1 } />
                 <img className={ display2 } src={ img2 } alt={ alt2 } />
                 <img className={ display3 } src={ img3 } alt={ alt3 } />
