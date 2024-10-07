@@ -36,23 +36,32 @@ const Branding = () => {
                 <h1>Brand Guide</h1>
                 <p>Here is a look into the Stripes Nation brand created by Christian Yip. Click on the buttons below to learn more. A full brand book will be available soon.</p>
             </article>
-            <DropdownBrand
-                heading="Logo Design"
-                img1={ Draft }
-                img2={ Logo }
-                img3={ Wordmark }
-            />
-            <DropdownBrand
-                heading="Style Tile"
-                img1={ Colour }
-                img2={ Typography }
-            />
-            <DropdownBrand
-                heading="Brand Identity"
-                img1={ Values }
-                img2={ Initiative }
-                img3={ Voice }
-            />
+            <div className="dropdown-container">
+                <DropdownBrand
+                    heading="Logo Design"
+                    img1={ Draft }
+                    img2={ Logo }
+                    img3={ Wordmark }
+                    display4="none"
+                    display5="none"
+                />
+                <DropdownBrand
+                    heading="Style Tile"
+                    img1={ Colour }
+                    img2={ Typography }
+                    display3="none"
+                    display4="none"
+                    display5="none"
+                />
+                <DropdownBrand
+                    heading="Brand Identity"
+                    img1={ Values }
+                    img2={ Initiative }
+                    img3={ Voice }
+                    display4="none"
+                    display5="none"
+                />
+            </div>
         </div>
     )
 }

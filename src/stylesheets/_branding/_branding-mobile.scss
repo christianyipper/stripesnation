@@ -11,30 +11,35 @@
                 width: 100%;
             }
         }
-    
-        section {
+        .dropdown-container {
             grid-column: 1 / span 4;
-            border-radius: 16px;
-            transition: 0.5s ease-in-out;
-    
-            h2 {
-                cursor: pointer;
-                margin: 0;
-                padding-top: 8px;
-                padding-bottom: 8px;
-                padding-left: 24px;
-                margin-bottom: 4px;
+            position: relative;
+            @include flex-wrap( nowrap, column, center, center );
+            gap: 24px;
 
-                &:hover {
-                    font-size: 32px;
-                    height: 42px;
+            section {
+                border-radius: 16px;
+                transition: 0.5s ease-in-out;
+        
+                h2 {
+                    cursor: pointer;
+                    margin: 0;
                     padding-top: 8px;
                     padding-bottom: 8px;
+                    padding-left: 24px;
+                    margin-bottom: 4px;
+    
+                    &:hover {
+                        font-size: 32px;
+                        height: 42px;
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                    }
                 }
             }
-        }
-        .drop {
-            height: 60px;
+            .drop {
+                height: 60px;
+            }
         }
     }
 }

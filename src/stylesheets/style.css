@@ -1514,8 +1514,18 @@ footer .footer-bot p {
   margin-top: -12px;
   width: 75%;
 }
-.branding section {
+.branding .dropdown-container {
   grid-column: 2/12;
+  position: relative;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.branding .dropdown-container section {
+  width: 100%;
   background-color: #0a0a0a;
   height: var(--max-height);
   border-radius: 8px;
@@ -1523,10 +1533,10 @@ footer .footer-bot p {
   overflow: hidden;
   transition: 0.2s ease-in-out;
 }
-.branding section:hover {
+.branding .dropdown-container section:hover {
   border-color: #1c62ed;
 }
-.branding section h2 {
+.branding .dropdown-container section h2 {
   cursor: pointer;
   margin: 0;
   padding-top: 7px;
@@ -1535,16 +1545,19 @@ footer .footer-bot p {
   margin-bottom: 2px;
   transition: 0.2s ease-in-out;
 }
-.branding section h2:hover {
+.branding .dropdown-container section h2:hover {
   font-size: 34px;
   height: 42px;
   padding-top: 8.5px;
   padding-bottom: 8px;
 }
-.branding section img {
+.branding .dropdown-container section img {
   width: 100%;
 }
-.branding .drop {
+.branding .dropdown-container section img.none {
+  display: none;
+}
+.branding .dropdown-container .drop {
   height: 60px;
 }
 
@@ -1566,12 +1579,21 @@ footer .footer-bot p {
     margin-top: -12px;
     width: 100%;
   }
-  .branding section {
+  .branding .dropdown-container {
     grid-column: 1/span 4;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+  }
+  .branding .dropdown-container section {
     border-radius: 16px;
     transition: 0.5s ease-in-out;
   }
-  .branding section h2 {
+  .branding .dropdown-container section h2 {
     cursor: pointer;
     margin: 0;
     padding-top: 8px;
@@ -1579,13 +1601,13 @@ footer .footer-bot p {
     padding-left: 24px;
     margin-bottom: 4px;
   }
-  .branding section h2:hover {
+  .branding .dropdown-container section h2:hover {
     font-size: 32px;
     height: 42px;
     padding-top: 8px;
     padding-bottom: 8px;
   }
-  .branding .drop {
+  .branding .dropdown-container .drop {
     height: 60px;
   }
 }/*# sourceMappingURL=style.css.map */
