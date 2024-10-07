@@ -31,13 +31,13 @@ const Footer = () => {
                     <a className="text-link" href="/connect">Connect</a>
                     <span>
                         <hr/>
-                        <a className="text-link" href="">Branding</a>
+                        <a className="text-link" href="/branding">Branding</a>
                         <hr/>
                         <a className="text-link" href="">Legal</a>
                     </span>
                 </div>
                 <div className="footer-links-mobile">
-                    <a className="text-link" href="">Branding</a>
+                    <a className="text-link" href="/branding">Branding</a>
                     <hr/>
                     <a className="text-link" href="">Legal</a>
                 </div>

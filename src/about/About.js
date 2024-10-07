@@ -30,7 +30,7 @@ const About = () => {
             <section className="about-content">
                 <article className="content-1">
                     <h2>The<span> </span>Beginning</h2>
-                    <p>Stripes Nation is a referee & sports photography brand which began as a passion project by Christian Yip, a web developer and graphics designer. Driven by his love for hockey, he created a brand that reflected the spirit and values of the officiating community. The logo, font, and icons were carefully designed to evoke the elements of the referee uniform and the game's fast-paced nature.</p>
+                    <p>Stripes Nation is a non-profit referee & sports photography brand which began as a passion project by Christian Yip, a web developer and graphics designer. Driven by his love for hockey, he created a brand that reflected the spirit and values of the officiating community. The logo, font, and icons were carefully designed to evoke the elements of the referee uniform and the game's fast-paced nature.</p>
                 </article>
                 <div className="about-photo a1">
                     <img src={ PaperLogo } alt="Image of the Stripes Nation logo being drafted on paper" />

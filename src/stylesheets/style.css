@@ -1490,4 +1490,102 @@ footer .footer-bot p {
   .contact .content > div article:nth-child(3) .description {
     animation: ani-opacity 1s 3s ease-in-out forwards;
   }
+}
+.branding {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding: 0 80px;
+  max-width: 1280px;
+  width: 100%;
+  gap: 24px;
+}
+.branding > article {
+  grid-column: 1/span 12;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.branding > article h1 {
+  margin-top: 80px;
+}
+.branding > article p {
+  margin-top: -12px;
+  width: 75%;
+}
+.branding section {
+  grid-column: 2/12;
+  background-color: #0a0a0a;
+  height: var(--max-height);
+  border-radius: 8px;
+  border: 2px solid white;
+  overflow: hidden;
+  transition: 0.2s ease-in-out;
+}
+.branding section:hover {
+  border-color: #1c62ed;
+}
+.branding section h2 {
+  cursor: pointer;
+  margin: 0;
+  padding-top: 7px;
+  padding-bottom: 9px;
+  padding-left: 44px;
+  margin-bottom: 2px;
+  transition: 0.2s ease-in-out;
+}
+.branding section h2:hover {
+  font-size: 34px;
+  height: 42px;
+  padding-top: 8.5px;
+  padding-bottom: 8px;
+}
+.branding section img {
+  width: 100%;
+}
+.branding .drop {
+  height: 60px;
+}
+
+@media only screen and (max-width: 500px) {
+  .branding {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 0 16px;
+  }
+  .branding > article {
+    grid-column: 1/span 4;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .branding > article p {
+    margin-top: -12px;
+    width: 100%;
+  }
+  .branding section {
+    grid-column: 1/span 4;
+    border-radius: 16px;
+    transition: 0.5s ease-in-out;
+  }
+  .branding section h2 {
+    cursor: pointer;
+    margin: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 24px;
+    margin-bottom: 4px;
+  }
+  .branding section h2:hover {
+    font-size: 32px;
+    height: 42px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+  .branding .drop {
+    height: 60px;
+  }
 }/*# sourceMappingURL=style.css.map */

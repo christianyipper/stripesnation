@@ -16,6 +16,7 @@ import Home from './Home';
 import About from './about/About';
 import Gallery from './gallery/Gallery';
 import Connect from './connect/Connect';
+import Branding from './branding/Branding';
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
             <Route path='about' element={<About/>} />
             <Route path='gallery' element={<Gallery/>} />
             <Route path='connect' element={<Connect/>} />
+            <Route path='branding' element={<Branding/>} />
         </>
     )
 );

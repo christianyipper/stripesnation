@@ -1,0 +1,54 @@
+.branding {
+    @include layout( desktop );
+
+    > article {
+        grid-column: 1 / span 12;
+        @include flex-wrap( nowrap, column, center, center );
+
+        h1 {
+            margin-top: 80px;
+        }
+        p {
+            margin-top: -12px;
+            width: 75%;
+        }
+    }
+
+    section {
+        grid-column: 2 / 12;
+        background-color: #0a0a0a;
+        height: var(--max-height);
+        border-radius: 8px;
+        border: 2px solid white;
+        overflow: hidden;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            border-color: #1c62ed;
+    }
+        h2 {
+            cursor: pointer;
+            margin: 0;
+            padding-top: 7px;
+            padding-bottom: 9px;
+            padding-left: 44px;
+            margin-bottom: 2px;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                font-size: 34px;
+                height: 42px;
+                padding-top: 8.5px;
+                padding-bottom: 8px;
+            }
+        }
+
+        img {
+            width: 100%;
+            // border-radius: 16px;
+        }
+    }
+    .drop {
+        height: 60px;
+    }
+}
