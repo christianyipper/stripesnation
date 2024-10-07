@@ -1,25 +1,25 @@
-import { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useLayoutEffect } from 'react';
 
 const DropdownBrand = ({ 
     heading, 
     img1, img2, img3, img4, img5,
     alt1, alt2, alt3, alt4, alt5 
 }) => {
-    const itemRef = useRef(null);
+    const dropdownRef = useRef(null);
     const [isActive, setIsActive] = useState(false);
     const dropdownClick = () => {
         setIsActive(!isActive);
     };
 
-    useEffect(() => {
-        if (itemRef.current) {
-            const element = itemRef.current;
+    useLayoutEffect(() => {
+        if (dropdownRef.current) {
+            const element = dropdownRef.current;
             element.style.setProperty('--max-height', `${element.scrollHeight}px`);
         }
-    }, [itemRef]);
+    }, [dropdownRef]);
 
     return (
-        <section className={ isActive ? "" : "drop" } onClick={ dropdownClick } ref={itemRef}>
+        <section className={ isActive ? "" : "drop" } onClick={ dropdownClick } ref={dropdownRef}>
                 <h2>{ heading }</h2>
                 <img src={ img1 } alt={ alt1 } />
                 <img src={ img2 } alt={ alt2 } />
