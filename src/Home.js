@@ -1,6 +1,6 @@
-import HomeParallaxBg from "./assets/img/home-img/parallax-back.jpg";
+import HomeParallaxBg from "./assets/img/home-img/parallax-back.webp";
 import HomeParallaxGif from "./assets/img/home-img/parallax-animate.gif";
-import HomeParallax from "./assets/img/home-img/parallax-front.png";
+import HomeParallax from "./assets/img/home-img/parallax-front.webp";
 import Button from "./components/Button";
 import { Helmet } from "react-helmet";
 

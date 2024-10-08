@@ -1,9 +1,9 @@
 import { Helmet } from "react-helmet";
 
 import OurStoryLogo from '../assets/img/about-img/StripesNation-OurStory.png';
-import PaperLogo from '../assets/img/about-img/logo-draft.jpg';
+import PaperLogo from '../assets/img/about-img/logo-draft.webp';
 import RefereePhoto from '../assets/img/about-img/referee-photoshoot.jpg';
-import YipperPhoto from '../assets/img/about-img/profile-img.jpg';
+import YipperPhoto from '../assets/img/about-img/profile-img.webp';
 
 const About = () => {
     

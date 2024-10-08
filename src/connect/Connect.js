@@ -1,7 +1,7 @@
 import { Helmet } from "react-helmet";
 
-import Wallpaper from "../assets/img/connect-img/yipper-wallpaper-fade.jpg";
-import WallpaperHalf from "../assets/img/connect-img/yipper-wallpaper-half.jpg";
+import Wallpaper from "../assets/img/connect-img/wallpaper-bg.webp";
+import WallpaperHalf from "../assets/img/connect-img/wallpaper-outline.webp";
 import Button from "../components/Button";
 
 const Contact = () => {
